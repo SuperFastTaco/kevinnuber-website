@@ -186,7 +186,7 @@ export default function Process() {
 
           {/* Scale */}
           <motion.div 
-            className="lg:grid lg:grid-cols-2 lg:gap-16 items-center"
+            className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 items-center"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.1 }}
