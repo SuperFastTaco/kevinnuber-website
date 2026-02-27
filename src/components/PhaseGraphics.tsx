@@ -20,15 +20,15 @@ export function BuildGraphic() {
           </linearGradient>
         </defs>
         {/* Foundation */}
-        <motion.rect x="30" y="110" width="140" height="15" rx="4" fill="#1e293b" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} />
+        <motion.rect x="30" y="110" width="140" height="15" rx="4" fill="#1e293b" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6 }} />
         
         {/* Pillars */}
-        <motion.rect x="45" y="60" width="25" height="45" rx="2" fill="url(#build-grad-1)" initial={{ opacity: 0, scaleY: 0, transformOrigin: "bottom" }} whileInView={{ opacity: 1, scaleY: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }} />
-        <motion.rect x="87.5" y="40" width="25" height="65" rx="2" fill="url(#build-grad-1)" initial={{ opacity: 0, scaleY: 0, transformOrigin: "bottom" }} whileInView={{ opacity: 1, scaleY: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }} />
-        <motion.rect x="130" y="20" width="25" height="85" rx="2" fill="url(#build-grad-2)" initial={{ opacity: 0, scaleY: 0, transformOrigin: "bottom" }} whileInView={{ opacity: 1, scaleY: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }} />
+        <motion.rect x="45" y="60" width="25" height="45" rx="2" fill="url(#build-grad-1)" initial={{ opacity: 0, scaleY: 0, transformOrigin: "bottom" }} whileInView={{ opacity: 1, scaleY: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.5, delay: 0.2 }} />
+        <motion.rect x="87.5" y="40" width="25" height="65" rx="2" fill="url(#build-grad-1)" initial={{ opacity: 0, scaleY: 0, transformOrigin: "bottom" }} whileInView={{ opacity: 1, scaleY: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.5, delay: 0.4 }} />
+        <motion.rect x="130" y="20" width="25" height="85" rx="2" fill="url(#build-grad-2)" initial={{ opacity: 0, scaleY: 0, transformOrigin: "bottom" }} whileInView={{ opacity: 1, scaleY: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.5, delay: 0.6 }} />
         
         {/* Connecting Line */}
-        <motion.path d="M 57.5 60 L 100 40 L 142.5 20" fill="none" stroke="#ffffff" strokeWidth="2" strokeDasharray="4 4" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 1 }} />
+        <motion.path d="M 57.5 60 L 100 40 L 142.5 20" fill="none" stroke="#ffffff" strokeWidth="2" strokeDasharray="4 4" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.8, delay: 1 }} />
       </svg>
     </div>
   );
@@ -46,17 +46,17 @@ export function ScaleGraphic() {
           </linearGradient>
         </defs>
         {/* Main upward curve */}
-        <motion.path d="M 20 130 C 60 130, 80 70, 170 20" fill="none" stroke="url(#scale-grad)" strokeWidth="6" strokeLinecap="round" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1.2, ease: "easeInOut" }} />
+        <motion.path d="M 20 130 C 60 130, 80 70, 170 20" fill="none" stroke="url(#scale-grad)" strokeWidth="6" strokeLinecap="round" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 1.2, ease: "easeInOut" }} />
         
         {/* Secondary curves */}
-        <motion.path d="M 20 130 C 70 110, 100 90, 150 60" fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" opacity="0.5" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1.2, delay: 0.2, ease: "easeInOut" }} />
-        <motion.path d="M 20 130 C 50 140, 120 110, 160 90" fill="none" stroke="#c2a677" strokeWidth="3" strokeLinecap="round" opacity="0.5" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1.2, delay: 0.4, ease: "easeInOut" }} />
+        <motion.path d="M 20 130 C 70 110, 100 90, 150 60" fill="none" stroke="#3b82f6" strokeWidth="3" strokeLinecap="round" opacity="0.5" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 1.2, delay: 0.2, ease: "easeInOut" }} />
+        <motion.path d="M 20 130 C 50 140, 120 110, 160 90" fill="none" stroke="#c2a677" strokeWidth="3" strokeLinecap="round" opacity="0.5" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 1.2, delay: 0.4, ease: "easeInOut" }} />
         
         {/* Nodes */}
-        <motion.circle cx="80" cy="88" r="5" fill="#0a192f" stroke="#3b82f6" strokeWidth="2" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: 0.6 }} />
-        <motion.circle cx="125" cy="48" r="6" fill="#0a192f" stroke="#c2a677" strokeWidth="2" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.3, delay: 0.8 }} />
-        <motion.circle cx="170" cy="20" r="8" fill="#c2a677" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.4, delay: 1 }} />
-        <motion.circle cx="170" cy="20" r="14" fill="none" stroke="#c2a677" strokeWidth="1" opacity="0.5" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 1 }} />
+        <motion.circle cx="80" cy="88" r="5" fill="#0a192f" stroke="#3b82f6" strokeWidth="2" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.3, delay: 0.6 }} />
+        <motion.circle cx="125" cy="48" r="6" fill="#0a192f" stroke="#c2a677" strokeWidth="2" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.3, delay: 0.8 }} />
+        <motion.circle cx="170" cy="20" r="8" fill="#c2a677" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.4, delay: 1 }} />
+        <motion.circle cx="170" cy="20" r="14" fill="none" stroke="#c2a677" strokeWidth="1" opacity="0.5" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 0.6, delay: 1 }} />
       </svg>
     </div>
   );
@@ -83,7 +83,7 @@ export function CapitalizeGraphic() {
         </defs>
         
         {/* Center glowing element */}
-        <motion.circle cx="100" cy="75" r="40" fill="#c2a677" opacity="0.1" filter="url(#glow)" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} />
+        <motion.circle cx="100" cy="75" r="40" fill="#c2a677" opacity="0.1" filter="url(#glow)" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 1 }} />
         
         {/* Diamond shape */}
         <motion.path 
@@ -91,7 +91,7 @@ export function CapitalizeGraphic() {
           fill="url(#cap-grad-main)" 
           initial={{ opacity: 0, scale: 0.5, rotate: -45 }} 
           whileInView={{ opacity: 1, scale: 1, rotate: 0 }} 
-          viewport={{ once: true }} 
+          viewport={{ once: true, amount: 0.4 }} 
           transition={{ duration: 0.8, type: "spring", bounce: 0.4 }} 
         />
         
@@ -101,7 +101,7 @@ export function CapitalizeGraphic() {
           fill="url(#cap-grad-light)" 
           initial={{ opacity: 0 }} 
           whileInView={{ opacity: 1 }} 
-          viewport={{ once: true }} 
+          viewport={{ once: true, amount: 0.4 }} 
           transition={{ duration: 0.5, delay: 0.5 }} 
         />
         <motion.path 
@@ -110,13 +110,13 @@ export function CapitalizeGraphic() {
           opacity="0.2"
           initial={{ opacity: 0 }} 
           whileInView={{ opacity: 0.2 }} 
-          viewport={{ once: true }} 
+          viewport={{ once: true, amount: 0.4 }} 
           transition={{ duration: 0.5, delay: 0.6 }} 
         />
         
         {/* Outer ring */}
-        <motion.circle cx="100" cy="75" r="60" fill="none" stroke="#3b82f6" strokeWidth="1" strokeDasharray="4 4" opacity="0.5" initial={{ scale: 0, rotate: -90 }} whileInView={{ scale: 1, rotate: 0 }} viewport={{ once: true }} transition={{ duration: 1.5, ease: "easeOut" }} />
-        <motion.circle cx="100" cy="75" r="70" fill="none" stroke="#c2a677" strokeWidth="1" opacity="0.2" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true }} transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }} />
+        <motion.circle cx="100" cy="75" r="60" fill="none" stroke="#3b82f6" strokeWidth="1" strokeDasharray="4 4" opacity="0.5" initial={{ scale: 0, rotate: -90 }} whileInView={{ scale: 1, rotate: 0 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 1.5, ease: "easeOut" }} />
+        <motion.circle cx="100" cy="75" r="70" fill="none" stroke="#c2a677" strokeWidth="1" opacity="0.2" initial={{ scale: 0 }} whileInView={{ scale: 1 }} viewport={{ once: true, amount: 0.4 }} transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }} />
       </svg>
     </div>
   );
