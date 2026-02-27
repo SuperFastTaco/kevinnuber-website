@@ -114,7 +114,7 @@ export default function Home() {
                   strokeLinecap="round"
                   initial={{ pathLength: 0 }}
                   whileInView={{ pathLength: 1 }}
-                  viewport={{ once: true, margin: "-100px" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 2.5, ease: "easeInOut" }}
                 />
                 <defs>
