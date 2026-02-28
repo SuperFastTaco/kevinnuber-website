@@ -13,7 +13,10 @@ export default function Navbar() {
     { name: 'Personal', path: '/personal' },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path === '/') return location.pathname === '/';
+    return location.pathname.startsWith(path);
+  };
 
   return (
     <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
