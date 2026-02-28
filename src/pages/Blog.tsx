@@ -31,8 +31,8 @@ export default function Blog() {
       id: 4,
       title: 'Why Top Advisors Sell Their Process, Not Product',
       description: 'Products change, but a solid process endures. See why the industry\'s most successful advisors lead with their methodology.',
-      date: 'Recent',
-      link: 'https://www.lifepro.com/Blog/why-top-advisors-sell-their-process-not-product',
+      date: 'February 28, 2026',
+      link: '/blog/why-top-advisors-sell-their-process-not-product',
       imageUrl: '/pictures/WhyTop.jpg'
     }
   ];
