@@ -85,7 +85,7 @@ async function startServer() {
 
       res.status(201).json({ message: "Successfully subscribed" });
     } catch (error: any) {
-      if (error.code === "SQLITE_CONSTRAINT") {
+      if (error.code === "SQLITE_CONSTRAINT" || error.code === "SQLITE_CONSTRAINT_UNIQUE") {
         return res.status(400).json({ error: "Email already subscribed" });
       }
       console.error("Database error:", error);
