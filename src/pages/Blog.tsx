@@ -23,8 +23,8 @@ export default function Blog() {
       id: 3,
       title: 'The Most Important Part of a Workshop',
       description: 'A workshop is won or lost during the opening sequence. Learn the blueprint to winning the room and why prospects buy you, not your PowerPoint.',
-      date: 'Recent',
-      link: 'https://vid.us/lob1c8',
+      date: 'February 28, 2026',
+      link: '/blog/the-most-important-part-of-a-workshop',
       imageUrl: '/pictures/TheMost.jpg'
     },
     {
