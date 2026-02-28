@@ -7,8 +7,8 @@ export default function Blog() {
       id: 1,
       title: 'Solve a Problem, Don\'t Sell a Product',
       description: 'Discover why shifting your focus from product features to solving client problems is the key to building lasting advisory relationships.',
-      date: 'Recent',
-      link: 'https://www.lifepro.com/Blog/solve-a-problem-dont-sell-a-product',
+      date: 'February 28, 2026',
+      link: '/blog/solve-a-problem-dont-sell-a-product',
       imageUrl: '/pictures/solve.jpg'
     },
     {
