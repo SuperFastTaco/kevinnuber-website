@@ -111,5 +111,58 @@ export const blogPosts: BlogPost[] = [
         Over the next weeks I'll include some content that answers many of the questions advisors have about using Digital. If you're ready to see how this can work for your specific practice, let's connect.
       </p>
     `
+  },
+  {
+    id: 3,
+    slug: 'the-most-important-part-of-a-workshop',
+    title: 'The Most Important Part of a Workshop',
+    subtitle: 'Winning the Room in the First 10 Minutes',
+    description: 'A workshop is won or lost during the opening sequence. Learn the blueprint to winning the room and why prospects buy you, not your PowerPoint.',
+    date: 'February 28, 2026',
+    readTime: '7 min read',
+    imageUrl: '/pictures/TheMost.jpg',
+    videoUrl: 'https://www.youtube.com/embed/4Cg_Sb-MGBc',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "I've seen two advisors do the exact same workshop—same slides, same restaurant, same marketing. One booked the entire room, the other booked almost nobody. The only difference? The opening sequence."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">A Tale of Two Openings</h2>
+      <p>
+        I want to share a true story that perfectly illustrates why the first ten minutes of your presentation are more important than the next hour of facts and figures.
+      </p>
+      
+      <h3 class="text-2xl font-serif font-bold text-brand-blue mt-8 mb-4">Advisor #1: The "Rockstar" Disaster</h3>
+      <p>
+        In the first scenario, the atmosphere was chaotic. Prospects walked in with no one to greet them. They wandered around looking for name tags and eventually found seats in the back. Then, classic rock started blasting, and the advisor ran onto the stage like he was at a concert.
+      </p>
+      <p>
+        He spent the first fifteen minutes talking about himself and how successful he was. He tried to break the ice with jokes about why men die younger than women and his own recent divorce. The room was silent. By the time he got to the actual financial content, he had already lost them. Only one or two people booked an appointment; everyone else couldn't wait to leave.
+      </p>
+
+      <h3 class="text-2xl font-serif font-bold text-brand-blue mt-8 mb-4">Advisor #2: The Choreographed Professional</h3>
+      <p>
+        The second advisor was different. Every prospect was greeted at the door and personally walked to the registration table. The advisor then walked them to their pre-assigned seats in the front of the room, where professional branded materials were waiting.
+      </p>
+      <p>
+        When he took the stage, he didn't talk about himself. He talked about <em>them</em>. He spoke to their pains, their frustrations, and their fears. He told a powerful personal story about why he chose this profession. Before he even touched a single slide of "logic," the entire room was emotionally ready to work with him.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Psychology of the Close</h4>
+        <p class="mb-0 italic text-gray-700">
+          "People make decisions based on emotion and justify them with logic. Your opening sequence handles the emotion; your main content provides the justification. If you fail the opening, the logic doesn't matter."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Blueprint for Success</h2>
+      <p>
+        A perfectly choreographed opening sequence is intentional. It’s not just about being "nice"—it’s about creating an environment where prospects feel safe, understood, and confident in your leadership.
+      </p>
+      <p>
+        If you want to know the exact script and structure that top advisors use to close the room before the first course is even served, reach out to me. This is exactly what we coach advisors on every single day.
+      </p>
+    `
   }
 ];
