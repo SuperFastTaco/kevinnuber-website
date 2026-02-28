@@ -83,7 +83,7 @@ export default function Process() {
                   strokeLinecap="round"
                   initial={{ pathLength: 0 }}
                   whileInView={{ pathLength: 1 }}
-                  viewport={{ once: true, amount: 0.1 }}
+                  viewport={{ once: true }}
                   transition={{ duration: 2.5, ease: "easeInOut" }}
                 />
                 <defs>
@@ -151,7 +151,7 @@ export default function Process() {
             className="lg:grid lg:grid-cols-2 lg:gap-16 items-center"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div>
@@ -189,7 +189,7 @@ export default function Process() {
             className="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 items-center"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div className="order-2 lg:order-1 mt-16 lg:mt-0">
@@ -227,7 +227,7 @@ export default function Process() {
             className="lg:grid lg:grid-cols-2 lg:gap-16 items-center"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
             <div>
