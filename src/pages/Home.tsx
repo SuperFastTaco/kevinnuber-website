@@ -242,7 +242,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl font-serif font-bold text-white sm:text-4xl">
-                Work hard. Play hard.
+                About Kevin Nuber
               </h2>
               <p className="mt-4 text-lg text-gray-300">
                 I believe in building a business that supports the life you want to live. When I'm not helping advisors scale their practices, you'll find me fishing, traveling, and creating videos.
