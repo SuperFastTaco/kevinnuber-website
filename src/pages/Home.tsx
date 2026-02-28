@@ -21,7 +21,7 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
             <div className="lg:col-span-7 text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight tracking-tight">
-                Build, Scale, and Capitalize Your Practice.
+                Build, Scale, and <span className="text-brand-accent text-5xl sm:text-6xl lg:text-7xl shadow-black inline-block transform scale-105 mx-1">Capitalize</span> Your Practice.
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
                 I am Kevin Nuber, an Advisor Development Consultant. I help seasoned financial professionals overcome unique challenges at every phase of their lifecycle.
@@ -70,7 +70,7 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-brand-accent font-semibold tracking-wide uppercase text-sm">The Lifecycle</h2>
+            <h2 className="text-brand-accent font-semibold tracking-wide uppercase text-base sm:text-lg lg:text-xl">The Advisor Lifecycle</h2>
             <p className="mt-2 text-3xl font-serif font-bold text-brand-blue sm:text-4xl">
               A Proven Process for Advisors
             </p>
@@ -89,7 +89,7 @@ export default function Home() {
               <span>2x</span>
               <span>1x</span>
             </div>
-            
+
             {/* Y-axis Title */}
             <div className="absolute left-[-60px] sm:left-[-40px] top-1/2 -translate-y-1/2 -rotate-90 text-xs font-bold text-gray-400 tracking-widest uppercase">
               Enterprise Value
@@ -170,7 +170,7 @@ export default function Home() {
               </motion.div>
             </div>
           </div>
-          
+
           <div className="mt-16 text-center">
             <Link to="/process" className="inline-flex items-center text-brand-blue font-medium hover:text-brand-accent transition-colors">
               Learn more about the process <ArrowRight className="ml-2 h-4 w-4" />
@@ -180,8 +180,8 @@ export default function Home() {
       </section>
 
       {/* Insights Section */}
-      <section 
-        className="relative py-24 bg-fixed bg-center bg-cover" 
+      <section
+        className="relative py-24 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: "url('https://picsum.photos/seed/architecture/1920/1080')" }}
       >
         <div className="absolute inset-0 bg-brand-blue/95"></div>
@@ -233,7 +233,7 @@ export default function Home() {
       </section>
 
       {/* Dual Purpose Teaser */}
-      <section 
+      <section
         className="relative py-24 bg-fixed bg-center bg-cover"
         style={{ backgroundImage: "url('https://picsum.photos/seed/lifestyle/1920/1080')" }}
       >
