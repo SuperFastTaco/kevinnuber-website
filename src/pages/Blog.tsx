@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Blog() {
   const writtenBlogs = [
@@ -15,7 +16,7 @@ export default function Blog() {
       title: 'Using Digital Marketing to Fill Up Workshops',
       description: 'Discover how digital marketing compares to traditional mailers for filling educational workshops and dinner seminars, backed by real results.',
       date: 'Recent',
-      link: 'https://vid.us/0knd5k',
+      link: '/blog/using-digital-marketing-to-fill-up-workshops',
       imageUrl: '/pictures/UsingDigital.jpg'
     },
     {
@@ -100,10 +101,17 @@ export default function Blog() {
                 </div>
                 <div className="group">
                   <h3 className="mt-4 text-xl sm:text-2xl font-serif font-bold leading-tight text-brand-blue group-hover:text-brand-accent transition-colors">
-                    <a href={post.link} target="_blank" rel="noopener noreferrer">
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </a>
+                    {post.link.startsWith('http') ? (
+                      <a href={post.link} target="_blank" rel="noopener noreferrer">
+                        <span className="absolute inset-0" />
+                        {post.title}
+                      </a>
+                    ) : (
+                      <Link to={post.link}>
+                        <span className="absolute inset-0" />
+                        {post.title}
+                      </Link>
+                    )}
                   </h3>
                   <p className="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
                     {post.description}
