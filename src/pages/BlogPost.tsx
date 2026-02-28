@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, Linkedin, Mail, Youtube } from 'lucide-react';
 import { blogPosts } from '../data/blogPosts';
+import SubscribeForm from '../components/SubscribeForm';
 
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
@@ -93,6 +94,11 @@ export default function BlogPost() {
             className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-brand-blue prose-p:text-gray-600 prose-strong:text-brand-blue prose-a:text-brand-accent hover:prose-a:underline"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* Lead Capture Section */}
+          <div className="mt-16">
+            <SubscribeForm />
+          </div>
 
           {/* Author Bio */}
           <div className="mt-20 pt-12 border-t border-gray-100 flex flex-col md:flex-row items-center md:items-start gap-8">
