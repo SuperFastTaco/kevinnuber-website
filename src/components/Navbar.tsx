@@ -23,8 +23,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="font-serif text-2xl font-bold text-brand-blue tracking-tight">Kevin Nuber</span>
+            <Link to="/" className="flex-shrink-0 flex items-center group">
+              <span className="font-serif text-2xl font-bold tracking-tight">
+                <span className="text-brand-blue group-hover:text-brand-accent transition-colors duration-300">Kevin</span>
+                <span className="text-brand-accent ml-2 group-hover:text-brand-blue transition-colors duration-300">Nuber</span>
+              </span>
             </Link>
           </div>
           
