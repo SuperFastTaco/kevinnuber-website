@@ -59,7 +59,7 @@ export default function Blog() {
           </div>
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {writtenBlogs.map((post) => (
-              <article key={post.id} className="flex flex-col items-start justify-between bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+              <article key={post.id} className="relative flex flex-col items-start justify-between bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
                 <div className="relative w-full">
                   <img
                     src={post.imageUrl}
@@ -78,7 +78,7 @@ export default function Blog() {
                       Practice Management
                     </span>
                   </div>
-                  <div className="group relative">
+                  <div className="group">
                     <h3 className="mt-4 text-xl font-serif font-semibold leading-6 text-brand-blue group-hover:text-brand-accent transition-colors">
                       <a href={post.link} target="_blank" rel="noopener noreferrer">
                         <span className="absolute inset-0" />
