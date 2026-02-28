@@ -14,6 +14,60 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 1,
+    slug: 'solve-a-problem-dont-sell-a-product',
+    title: 'Solve a Problem, Don\'t Sell a Product',
+    subtitle: 'Shifting from Practitioner to Business Owner',
+    description: 'Discover why shifting your focus from product features to solving client problems is the key to building lasting advisory relationships.',
+    date: 'February 28, 2026',
+    readTime: '6 min read',
+    imageUrl: '/pictures/solve.jpg',
+    videoUrl: 'https://www.youtube.com/embed/NCX_3OvVnkA',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "In today's rapidly evolving financial landscape, the path from 'Building' a practice to 'Capitalizing' on its full value is rarely a straight line. It requires a fundamental shift in mindset from being a practitioner to being a business owner."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Product Expert Trap</h2>
+      <p>
+        Once you get your insurance license, it's easy to think the quickest way to success is to be a product expert. You research every annuity, learn every feature, and run the numbers to show the highest possible returns. You think that if you become the ultimate expert, people will naturally flock to your office like the "Field of Dreams."
+      </p>
+      <p>
+        But then reality hits. You find out that nobody really cares how much of an expert you are, and they don't care how much you know about a specific product. This is where many advisors fail, but it's also where the top 1% have their greatest epiphany: <strong>Their main goal is to solve a problem, not sell a product.</strong>
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Identifying Your Dream Customer</h2>
+      <p>
+        To become a problem solver, you first have to identify who your "dream customer" is. And here's a hint: it's not just someone you can make a large commission on. That's solving a problem for yourself, not for them.
+      </p>
+      <p>
+        You need to understand your ideal client thoroughly. What are their pains? What are their specific problems? Where are they running into roadblocks, and where are they trying to go? Only once you understand the destination can you start thinking about the vehicle—the product—that will get them there.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Power of the Process</h4>
+        <p class="mb-0 italic text-gray-700">
+          "Once you show the ideal result and the problem you will solve to a client, you must lead with your process. A product is just a vehicle, but your process is the roadmap that ensures they reach their destination safely."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">From Rookie to Top Advisor</h2>
+      <p>
+        The rookie advisor immediately jumps into selling a product. The top advisor leads with a multi-step process that addresses the client's biggest risks in order:
+      </p>
+      <ul class="list-disc pl-6 space-y-4 text-gray-600">
+        <li><strong>Maximize Projected Income:</strong> Starting with Social Security to create a solid baseline.</li>
+        <li><strong>Secure the Paycheck:</strong> Ensuring basic needs are met before taking market risks.</li>
+        <li><strong>Minimize Tax Risk:</strong> Looking at the money from a tax perspective to keep more of what was saved.</li>
+      </ul>
+
+      <p>
+        By framing your work as solving a series of problems through a proprietary process, you stop being a salesperson and start being a trusted consultant. You're no longer selling a vehicle; you're selling the result.
+      </p>
+    `
+  },
+  {
     id: 2,
     slug: 'using-digital-marketing-to-fill-up-workshops',
     title: 'Using Digital Marketing to Fill Up Workshops',
