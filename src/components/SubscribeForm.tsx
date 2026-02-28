@@ -14,33 +14,37 @@ export default function SubscribeForm() {
     e.preventDefault();
     setStatus('loading');
 
-    const formspreeId = (import.meta as any).env.VITE_FORMSPREE_ID;
+    // Hardcoding your ID for maximum reliability on all hosting platforms
+    const formspreeId = 'xwvnzywb';
     
-    if (!formspreeId) {
-      setStatus('error');
-      setMessage('Form ID is missing. Please configure VITE_FORMSPREE_ID.');
-      return;
-    }
-
     try {
+      console.log('Attempting to send to Formspree:', formspreeId);
       const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          _subject: `New Lead: ${formData.firstName} ${formData.lastName}`
+        }),
       });
 
       if (response.ok) {
+        console.log('Formspree success');
         setStatus('success');
         setFormData({ firstName: '', lastName: '', email: '' });
       } else {
-        const data = await response.json();
+        const data = await response.json().catch(() => ({ error: 'Unknown error occurred' }));
+        console.error('Formspree error:', data);
         setStatus('error');
         setMessage(data.error || 'Something went wrong. Please try again.');
       }
     } catch (error) {
+      console.error('Network error:', error);
       setStatus('error');
       setMessage('Failed to connect to the server. Please check your connection.');
     }
