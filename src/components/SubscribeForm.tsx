@@ -14,21 +14,29 @@ export default function SubscribeForm() {
     e.preventDefault();
     setStatus('loading');
 
+    const formspreeId = (import.meta as any).env.VITE_FORMSPREE_ID;
+    
+    if (!formspreeId) {
+      setStatus('error');
+      setMessage('Form ID is missing. Please configure VITE_FORMSPREE_ID.');
+      return;
+    }
+
     try {
-      const response = await fetch('/api/subscribe', {
+      const response = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify(formData),
       });
-
-      const data = await response.json();
 
       if (response.ok) {
         setStatus('success');
         setFormData({ firstName: '', lastName: '', email: '' });
       } else {
+        const data = await response.json();
         setStatus('error');
         setMessage(data.error || 'Something went wrong. Please try again.');
       }
