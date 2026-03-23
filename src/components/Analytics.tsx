@@ -10,15 +10,21 @@ declare global {
   }
 }
 
-const META_PIXEL_ID = (import.meta as any).env.VITE_META_PIXEL_ID;
-const GA_MEASUREMENT_ID = (import.meta as any).env.VITE_GOOGLE_ANALYTICS_ID;
+const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID;
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
 
 export default function Analytics() {
   const location = useLocation();
 
   useEffect(() => {
+    console.log('Analytics initialized with:', { 
+      hasPixel: !!META_PIXEL_ID, 
+      hasGA: !!GA_MEASUREMENT_ID 
+    });
+
     // 1. Initialize Meta Pixel
     if (META_PIXEL_ID && !window.fbq) {
+      console.log('Initializing Meta Pixel:', META_PIXEL_ID);
       (function(f: any, b: any, e: any, v: any, n?: any, t?: any, s?: any) {
         if (f.fbq) return;
         n = f.fbq = function() {
