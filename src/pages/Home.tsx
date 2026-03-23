@@ -1,8 +1,15 @@
 import { ArrowRight, BarChart3, TrendingUp, ShieldCheck, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { blogPosts } from '../data/blogPosts';
 
 export default function Home() {
+  // Get the latest 3 posts with videos
+  const latestVideos = [...blogPosts]
+    .filter(post => post.videoUrl)
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 3);
+
   const handleBookClick = () => {
     if (window.fbq) {
       window.fbq('track', 'Schedule', {
@@ -212,33 +219,22 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/10">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/c-l97h2j1Rg"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/10">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/sNnpsV9ccPQ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/10">
-              <iframe
-                className="w-full aspect-video"
-                src="https://www.youtube.com/embed/zzI2mFXVs8I"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            {latestVideos.map((post) => (
+              <div key={post.id} className="flex flex-col">
+                <div className="rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/10 mb-4">
+                  <iframe
+                    className="w-full aspect-video"
+                    src={post.videoUrl}
+                    title={post.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <Link to={`/blog/${post.slug}`} className="text-white font-serif font-bold hover:text-brand-accent transition-colors line-clamp-2">
+                  {post.title}
+                </Link>
+              </div>
+            ))}
           </div>
           <div className="mt-12 text-center">
             <Link to="/blog" className="inline-flex items-center text-white font-medium hover:text-brand-accent transition-colors">

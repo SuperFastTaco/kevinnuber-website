@@ -1,41 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { blogPosts } from '../data/blogPosts';
 
 export default function Blog() {
-  const writtenBlogs = [
-    {
-      id: 1,
-      title: 'Solve a Problem, Don\'t Sell a Product',
-      description: 'Discover why shifting your focus from product features to solving client problems is the key to building lasting advisory relationships.',
-      date: 'February 28, 2026',
-      link: '/blog/solve-a-problem-dont-sell-a-product',
-      imageUrl: '/pictures/solve.jpg'
-    },
-    {
-      id: 2,
-      title: 'Using Digital Marketing to Fill Up Workshops',
-      description: 'Discover how digital marketing compares to traditional mailers for filling educational workshops and dinner seminars, backed by real results.',
-      date: 'Recent',
-      link: '/blog/using-digital-marketing-to-fill-up-workshops',
-      imageUrl: '/pictures/UsingDigital.jpg'
-    },
-    {
-      id: 3,
-      title: 'The Most Important Part of a Workshop',
-      description: 'A workshop is won or lost during the opening sequence. Learn the blueprint to winning the room and why prospects buy you, not your PowerPoint.',
-      date: 'February 28, 2026',
-      link: '/blog/the-most-important-part-of-a-workshop',
-      imageUrl: '/pictures/TheMost.jpg'
-    },
-    {
-      id: 4,
-      title: 'Why Top Advisors Sell Their Process, Not Product',
-      description: 'Products change, but a solid process endures. See why the industry\'s most successful advisors lead with their methodology.',
-      date: 'February 28, 2026',
-      link: '/blog/why-top-advisors-sell-their-process-not-product',
-      imageUrl: '/pictures/WhyTop.jpg'
-    }
-  ];
+  // Sort posts by ID descending to show newest first
+  const sortedPosts = [...blogPosts].sort((a, b) => b.id - a.id);
 
   return (
     <div className="relative bg-slate-50 min-h-screen">
@@ -79,7 +48,7 @@ export default function Blog() {
         </div>
         
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          {writtenBlogs.map((post) => (
+          {sortedPosts.map((post) => (
             <article key={post.id} className="relative flex flex-col items-start justify-between bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden hover:shadow-2xl transition-all duration-300 group">
               <div className="relative w-full overflow-hidden">
                 <img
@@ -96,22 +65,15 @@ export default function Blog() {
                     {post.date}
                   </time>
                   <span className="relative z-10 rounded-full bg-brand-blue/5 px-3 py-1.5 font-semibold text-brand-blue">
-                    Practice Management
+                    {post.category}
                   </span>
                 </div>
                 <div className="group">
                   <h3 className="mt-4 text-xl sm:text-2xl font-serif font-bold leading-tight text-brand-blue group-hover:text-brand-accent transition-colors">
-                    {post.link.startsWith('http') ? (
-                      <a href={post.link} target="_blank" rel="noopener noreferrer">
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </a>
-                    ) : (
-                      <Link to={post.link}>
-                        <span className="absolute inset-0" />
-                        {post.title}
-                      </Link>
-                    )}
+                    <Link to={`/blog/${post.slug}`}>
+                      <span className="absolute inset-0" />
+                      {post.title}
+                    </Link>
                   </h3>
                   <p className="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">
                     {post.description}
