@@ -231,7 +231,7 @@ export const blogPosts: BlogPost[] = [
     description: 'Are you stuck at a revenue ceiling? Discover why the solution isn\'t more leads, but documenting your process and "cloning" yourself through a team.',
     date: 'March 23, 2026',
     readTime: '5 min read',
-    imageUrl: 'https://picsum.photos/seed/growth/1200/800',
+    imageUrl: '/pictures/cloning-yourself.jpg',
     videoUrl: 'https://www.youtube.com/embed/u-wBTSwItGw',
     category: 'Practice Management',
     content: `
