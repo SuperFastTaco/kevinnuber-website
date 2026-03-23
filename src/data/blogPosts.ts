@@ -222,5 +222,66 @@ export const blogPosts: BlogPost[] = [
         By leading with a process, you're no longer asking a client to "buy a product." You're asking them to trust your 25 years of experience and follow a roadmap that leads to their financial success.
       </p>
     `
+  },
+  {
+    id: 5,
+    slug: 'cloning-yourself-breaking-the-production-ceiling',
+    title: 'Cloning Yourself: Breaking the Production Ceiling',
+    subtitle: 'The Difference Between a Sales Problem and a Capacity Problem',
+    description: 'Are you stuck at a revenue ceiling? Discover why the solution isn\'t more leads, but documenting your process and "cloning" yourself through a team.',
+    date: 'March 23, 2026',
+    readTime: '5 min read',
+    imageUrl: 'https://picsum.photos/seed/growth/1200/800',
+    videoUrl: 'https://www.youtube.com/embed/u-wBTSwItGw',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "You haven't hit a revenue ceiling; you've hit a physical ceiling. To scale beyond your own two hands, you have to stop being the only person who knows how your business works."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The 70-Appointment Trap</h2>
+      <p>
+        We recently had an advisor come into the office who was completely frustrated. On paper, he was doing great—writing about $2 million a month in annuities. But he couldn't break past that number. He felt stuck, exhausted, and like he was spinning his wheels.
+      </p>
+      <p>
+        When we looked under the hood of his business, the problem was glaring: <strong>He was running 70 appointments a week.</strong>
+      </p>
+      <p>
+        He didn't have a marketing problem. He didn't have a lead quality problem. He had a <strong>physical ceiling</strong>. He was completely maxed out because every single dollar of revenue required his personal time and presence.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Solution: Cloning Yourself</h2>
+      <p>
+        The solution wasn't a new marketing funnel. He needed to "clone" himself. In practice, this means hiring new selling advisors and handing them the overflow. By reducing his own grueling workload, he could instantly increase his firm's total capacity and finally break through that $2 million ceiling.
+      </p>
+      
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Scalability Catch</h4>
+        <p class="mb-0 italic text-gray-700">
+          "You cannot hand off a process that only lives inside your head. If it isn't documented, it can't be coached. And if it can't be coached, you can never scale."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Document to Scale</h2>
+      <p>
+        Before you can hire anyone, you have to take a step back and document your sales process. You need a step-by-step blueprint that covers everything from the "first hello" to the signed contract. 
+      </p>
+      <p>
+        When your process is documented, it becomes a tangible asset. You can hand it to a new hire, coach them on it, and hold them accountable to it. This is the only way to move from being a "practitioner" to being a true "business owner."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Take a Hard Look at Your Calendar</h2>
+      <p>
+        If you feel like you've hit a wall in your production, don't automatically look for better leads. Instead, look at your calendar. 
+      </p>
+      <ul class="list-disc pl-6 space-y-4 text-gray-600 my-8">
+        <li><strong>Identify the Ceiling:</strong> Are you maxed out on time?</li>
+        <li><strong>Document the Process:</strong> Get the "magic" out of your head and onto paper.</li>
+        <li><strong>Build the Team:</strong> Hire advisors who can execute your proven process.</li>
+      </ul>
+      <p>
+        Stop trying to do it all yourself. Document your process, hire a team, and clone your success.
+      </p>
+    `
   }
 ];
