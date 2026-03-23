@@ -10,8 +10,8 @@ declare global {
   }
 }
 
-const META_PIXEL_ID = import.meta.env.VITE_META_PIXEL_ID;
-const GA_MEASUREMENT_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
+const META_PIXEL_ID = (import.meta as any).env.VITE_META_PIXEL_ID;
+const GA_MEASUREMENT_ID = (import.meta as any).env.VITE_GOOGLE_ANALYTICS_ID;
 
 export default function Analytics() {
   const location = useLocation();
@@ -66,6 +66,17 @@ export default function Analytics() {
   useEffect(() => {
     if (META_PIXEL_ID && window.fbq) {
       window.fbq('track', 'PageView');
+      
+      // Also send to server-side CAPI for better tracking
+      fetch('/api/meta-capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          eventName: 'PageView',
+          eventSourceUrl: window.location.href,
+          userData: {} // You can add more user data here if available
+        }),
+      }).catch(err => console.error('Meta CAPI error:', err));
     }
     if (GA_MEASUREMENT_ID && window.gtag) {
       window.gtag('config', GA_MEASUREMENT_ID, {
