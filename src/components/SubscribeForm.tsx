@@ -35,6 +35,21 @@ export default function SubscribeForm() {
 
       if (response.ok) {
         console.log('Formspree success');
+        
+        // Track Lead Event
+        if (window.fbq) {
+          window.fbq('track', 'Lead', {
+            content_name: 'Newsletter Subscription',
+            content_category: 'Lead Generation'
+          });
+        }
+        if (window.gtag) {
+          window.gtag('event', 'generate_lead', {
+            'event_category': 'engagement',
+            'event_label': 'Newsletter Subscription'
+          });
+        }
+
         setStatus('success');
         setFormData({ firstName: '', lastName: '', email: '' });
       } else {
