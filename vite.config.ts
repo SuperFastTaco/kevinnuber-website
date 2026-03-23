@@ -10,6 +10,8 @@ export default defineConfig(({mode}) => {
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(process.env.GEMINI_API_KEY || env.GEMINI_API_KEY),
       'import.meta.env.VITE_FORMSPREE_ID': JSON.stringify(process.env.VITE_FORMSPREE_ID || env.VITE_FORMSPREE_ID),
+      'import.meta.env.VITE_META_PIXEL_ID': JSON.stringify(process.env.VITE_META_PIXEL_ID || env.VITE_META_PIXEL_ID),
+      'import.meta.env.VITE_GOOGLE_ANALYTICS_ID': JSON.stringify(process.env.VITE_GOOGLE_ANALYTICS_ID || env.VITE_GOOGLE_ANALYTICS_ID),
     },
     resolve: {
       alias: {
