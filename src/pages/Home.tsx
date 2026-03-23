@@ -3,6 +3,21 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 
 export default function Home() {
+  const handleBookClick = () => {
+    if (window.fbq) {
+      window.fbq('track', 'Schedule', {
+        content_name: 'Calendly Appointment',
+        content_category: 'Booking'
+      });
+    }
+    if (window.gtag) {
+      window.gtag('event', 'begin_checkout', {
+        'event_category': 'engagement',
+        'event_label': 'Book an Appointment'
+      });
+    }
+  };
+
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -31,6 +46,7 @@ export default function Home() {
                   href="https://calendly.com/kevin-nuber"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={handleBookClick}
                   className="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-md text-brand-blue bg-brand-accent hover:bg-opacity-90 shadow-sm transition-all"
                 >
                   Book an Appointment
