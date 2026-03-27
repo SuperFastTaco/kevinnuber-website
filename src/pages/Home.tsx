@@ -79,7 +79,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl max-w-md w-full aspect-[4/5] border-4 border-white/10">
                 {/* Professional headshot */}
                 <img
-                  src="/pictures/kevin-headshot.jpg"
+                  src="/pictures/hero-test.jpg.jpeg"
                   alt="Kevin Nuber - Professional Headshot"
                   className="object-cover w-full h-full"
                 />
