@@ -232,7 +232,7 @@ export const blogPosts: BlogPost[] = [
     date: 'March 23, 2026',
     readTime: '5 min read',
     imageUrl: '/pictures/cloning-yourself.jpg',
-    videoUrl: 'https://www.youtube.com/embed/u-wBTSwItGw',
+    videoUrl: 'https://www.youtube.com/embed/u-wBTSwItGw?autoplay=1&mute=1',
     category: 'Practice Management',
     content: `
       <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
