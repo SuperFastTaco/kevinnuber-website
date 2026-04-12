@@ -369,7 +369,7 @@ export const blogPosts: BlogPost[] = [
         <p class="mb-6 text-gray-700">
           A high-value enterprise does not depend on just one marketing funnel. We've put together a comprehensive checklist of 12 different client acquisition strategies across live, digital, and strategic channels.
         </p>
-        <a href="/downloads/revenue-levers-checklist.docx" download class="inline-block bg-brand-accent text-brand-blue font-bold py-3 px-6 rounded hover:bg-brand-accent/90 transition-colors">
+        <a href="/downloads/revenue-levers-checklist.docx" download class="inline-block bg-brand-blue !text-white font-bold py-3 px-6 rounded hover:bg-brand-blue/90 transition-colors no-underline">
           Download The Free Checklist
         </a>
       </div>
