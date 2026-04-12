@@ -283,5 +283,58 @@ export const blogPosts: BlogPost[] = [
         Stop trying to do it all yourself. Document your process, hire a team, and clone your success.
       </p>
     `
+  },
+  {
+    id: 6,
+    slug: 'are-you-the-bottleneck-documentation-makes-you-replaceable',
+    title: 'Are You the Bottleneck? Why Documentation Makes You Replaceable',
+    subtitle: 'The Key to Scaling Your Advisory Practice',
+    description: 'If you are the only one who knows how your business works, you are the bottleneck. Learn why documenting your processes makes you replaceable—and why that\'s exactly what you need to scale.',
+    date: 'April 12, 2026',
+    readTime: '5 min read',
+    imageUrl: '/pictures/bottleneck.jpg',
+    videoUrl: 'https://www.youtube.com/embed/cLSUCJfBBW0',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "If you are the only person who knows how to run your business, you don't own a business—you own a job. And you are the biggest bottleneck to your own growth."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Founder's Dilemma</h2>
+      <p>
+        Many financial advisors reach a point where their practice is thriving, but they feel completely overwhelmed. You might be bringing in great revenue, but every single decision, process, and client interaction relies entirely on you. If you step away for a week, the whole operation grinds to a halt.
+      </p>
+      <p>
+        This is the classic founder's dilemma. You've built something successful, but in doing so, you've made yourself the ultimate bottleneck. Your business can only grow as much as your personal time and energy allow.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Documentation = Replaceable</h2>
+      <p>
+        The word "replaceable" often carries a negative connotation. In the corporate world, nobody wants to be replaceable. But as a business owner, <strong>being replaceable is the ultimate goal.</strong>
+      </p>
+      <p>
+        How do you become replaceable? Through rigorous documentation. You need to take the "magic" out of your head and put it onto paper. Every process—from how you greet a client to how you present a financial plan—needs to be documented so clearly that someone else could step in and execute it.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Scalability Shift</h4>
+        <p class="mb-0 italic text-gray-700">
+          "Documentation turns your personal expertise into a tangible business asset. It's the bridge between a solo practice and a scalable enterprise."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Breaking the Bottleneck</h2>
+      <p>
+        When you document your processes, you empower your team. You can hire new advisors, train support staff, and delegate tasks with confidence. You are no longer the single point of failure.
+      </p>
+      <ul class="list-disc pl-6 space-y-4 text-gray-600 my-8">
+        <li><strong>Audit Your Day:</strong> Identify the tasks that only you are doing.</li>
+        <li><strong>Write It Down:</strong> Create step-by-step guides for your core processes.</li>
+        <li><strong>Empower Your Team:</strong> Train your staff using the documentation, not just your verbal instructions.</li>
+      </ul>
+      <p>
+        Stop being the bottleneck. Document your business, make yourself replaceable, and watch your practice scale beyond your own two hands.
+      </p>
+    `
   }
 ];
