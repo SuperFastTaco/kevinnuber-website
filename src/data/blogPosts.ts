@@ -336,5 +336,61 @@ export const blogPosts: BlogPost[] = [
         Stop being the bottleneck. Document your business, make yourself replaceable, and watch your practice scale beyond your own two hands.
       </p>
     `
+  },
+  {
+    id: 7,
+    slug: 'the-single-point-of-failure-in-most-advisory-firms',
+    title: 'The Single Point of Failure in Most Advisory Firms',
+    subtitle: 'Why You Need Multiple Revenue Levers to Guarantee Predictable Growth',
+    description: 'Are you relying on a single marketing funnel? Discover why having only one source of new clients is a massive liability and how to build multiple revenue levers.',
+    date: 'April 12, 2026',
+    readTime: '6 min read',
+    imageUrl: '/pictures/revenue-levers.jpg',
+    videoUrl: 'https://www.youtube.com/embed/syukZdh4Ztc',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "If you only have one marketing funnel, you don't have a resilient business—you have a massive liability. You have a single point of failure."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Single Point of Failure</h2>
+      <p>
+        I want you to think about exactly how you get new clients right now. For a lot of advisors, there is only one answer. Maybe it’s dinner seminars. Maybe it’s direct mail. And if that one funnel is working, life is great.
+      </p>
+      <p>
+        But what happens when it breaks? What happens if mailing costs double, response rates plummet, or something out of your control shuts down your only source of new business?
+      </p>
+      <p>
+        The most successful CEOs in our industry never rely on just one source of new business. They build <strong>Multiple Revenue Levers</strong> so their growth never skips a beat.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Revenue Lever Audit</h4>
+        <p class="mb-6 text-gray-700">
+          A high-value enterprise does not depend on just one marketing funnel. We've put together a comprehensive checklist of 12 different client acquisition strategies across live, digital, and strategic channels.
+        </p>
+        <a href="/downloads/revenue-levers-checklist.docx" download class="inline-block bg-brand-accent text-brand-blue font-bold py-3 px-6 rounded hover:bg-brand-accent/90 transition-colors">
+          Download The Free Checklist
+        </a>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The 4 Levels of Revenue Levers</h2>
+      
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Level 1: Live & In-Person Levers</h3>
+      <p>The traditional, direct response marketing to create leads. This includes dinner seminars, educational workshops, and strategic client appreciation events.</p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Level 2: Digital & Evergreen Levers</h3>
+      <p>Systems that run 24/7, pulling in prospects even while you sleep. Think automated webinars, high-value lead magnets, and email nurture sequences.</p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Level 3: Authority & Media Levers</h3>
+      <p>Strategies that position you as the undisputed expert in your market, such as podcasting, local broadcasting, and published content.</p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Level 4: Strategic & Internal Levers</h3>
+      <p>Leveraging existing relationships and professional networks. This means CPA & attorney partnerships, internal cross-selling, and a formalized client referral process.</p>
+
+      <p class="mt-8 font-bold">
+        Take a hard look at your practice today. If you only have one lever you can pull for revenue, it’s time to start building your second.
+      </p>
+    `
   }
 ];
