@@ -392,5 +392,76 @@ export const blogPosts: BlogPost[] = [
         Take a hard look at your practice today. If you only have one lever you can pull for revenue, it’s time to start building your second.
       </p>
     `
+  },
+  {
+    id: 8,
+    slug: 'how-to-hire-a-one-of-a-kind-advisory-team',
+    title: 'How to Hire a One of a Kind Advisory Team',
+    subtitle: 'Building Culture Through the Employee Matrix',
+    description: 'Building an elite team requires more than just resumes. Learn how to use the Employee Matrix to hire for culture, reward top performers, and eliminate toxicity.',
+    date: 'April 22, 2026',
+    readTime: '5 min read',
+    imageUrl: '/pictures/hiring-team.jpg',
+    videoUrl: 'https://www.youtube.com/embed/9kaPx59WW4A',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "Building a one-of-a-kind team isn't about qualifications on a resume. It's about culture, values, and the courage to fire toxic people—even when they are your top producers."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Advisor's Personnel Struggle</h2>
+      <p>
+        Building a specialized team centered around a unique culture is one of the hardest parts of scaling an advisory practice. Many advisors struggle with the same recurring problem: hiring and firing the right people.
+      </p>
+      <p>
+        I recently spoke with an advisor who was facing this exact challenge. They were having a hard time identifying who truly belonged on their team. The advice I gave them didn't come from a textbook—it came from my personal experience helping build the company I worked for. We developed a guide that we used to promote the right people and terminate the toxic ones: <strong>The Employee Matrix.</strong>
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Employee Matrix</h2>
+      <p>
+        The Matrix is a simple grid that plots every team member based on two primary axes. Every person in your firm falls into one of these quadrants, and your job as a leader is to act accordingly.
+      </p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">The Vertical Axis: Values & Attitude</h3>
+      <p>
+        This is the most important part of your hiring process. Qualifications can be taught, but values and attitude are inherent. If you want a team based on culture, you must prioritize values over the resume.
+      </p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">The Horizontal Axis: Performance & Qualifications</h3>
+      <p>
+        While certainly a consideration in hiring and retaining a team member, this is secondary. A high performer who doesn't share your values will eventually poison the culture you've worked so hard to build.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Best Employee</h4>
+        <p class="mb-0 italic text-gray-700">
+          "The best employee is obviously the person who has high values and high performance. This person should always be rewarded the most and positioned as a leader within your firm."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Navigating the Quadrants</h2>
+      <p>
+        How you handle the other quadrants determines the health of your organization:
+      </p>
+      <ul class="list-disc pl-6 space-y-4 text-gray-600 my-8">
+        <li><strong>High Performance / Low Values:</strong> Terminate immediately. This is the most toxic employee you can have. Their success gives them "permission" to ignore your culture, which demoralizes everyone else.</li>
+        <li><strong>Low Performance / High Values:</strong> This is your greatest coaching opportunity. They have the right heart; they just need the right training to improve their skills.</li>
+        <li><strong>Low Performance / Low Values:</strong> Let them go. This shouldn't be a difficult decision, as they contribute neither to the work nor the environment.</li>
+      </ul>
+
+      <div class="bg-brand-blue p-8 rounded-lg my-12 text-white">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">Download the Tool</h4>
+        <p class="mb-6 opacity-90">
+          Ready to audit your own team? Download the Employee Matrix template and use it during your next performance review or hiring round.
+        </p>
+        <a href="/downloads/employee-matrix.pdf" download class="inline-block bg-brand-accent text-brand-blue font-bold py-3 px-6 rounded hover:bg-brand-accent/90 transition-colors no-underline">
+          Download The Employee Matrix
+        </a>
+      </div>
+
+      <p class="mt-8 font-bold">
+        Use this matrix to audit your team. It will give you the clarity you need to hire, fire, and promote the right people for a one-of-a-kind advisory team.
+      </p>
+    `
   }
 ];
