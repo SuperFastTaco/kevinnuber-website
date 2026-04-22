@@ -401,7 +401,7 @@ export const blogPosts: BlogPost[] = [
     description: 'Building an elite team requires more than just resumes. Learn how to use the Employee Matrix to hire for culture, reward top performers, and eliminate toxicity.',
     date: 'April 22, 2026',
     readTime: '5 min read',
-    imageUrl: '/pictures/hiring-team.jpg',
+    imageUrl: '/pictures/hiring-team.jpeg',
     videoUrl: 'https://www.youtube.com/embed/9kaPx59WW4A',
     category: 'Practice Management',
     content: `
@@ -449,12 +449,12 @@ export const blogPosts: BlogPost[] = [
         <li><strong>Low Performance / Low Values:</strong> Let them go. This shouldn't be a difficult decision, as they contribute neither to the work nor the environment.</li>
       </ul>
 
-      <div class="bg-brand-blue p-8 rounded-lg my-12 text-white">
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
         <h4 class="text-brand-accent font-bold text-lg mb-4">Download the Tool</h4>
-        <p class="mb-6 opacity-90">
+        <p class="mb-6 text-gray-700">
           Ready to audit your own team? Download the Employee Matrix template and use it during your next performance review or hiring round.
         </p>
-        <a href="/downloads/employee-matrix.pdf" download class="inline-block bg-brand-accent text-brand-blue font-bold py-3 px-6 rounded hover:bg-brand-accent/90 transition-colors no-underline">
+        <a href="/downloads/employee-matrix.pdf" download class="inline-block bg-brand-blue !text-white font-bold py-3 px-6 rounded hover:bg-brand-blue/90 transition-colors no-underline">
           Download The Employee Matrix
         </a>
       </div>
