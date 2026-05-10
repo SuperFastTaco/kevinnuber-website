@@ -528,5 +528,64 @@ export const blogPosts: BlogPost[] = [
         When you master the perfect opening, you don't just capture attention—you command the room and set the stage for the close.
       </p>
     `
+  },
+  {
+    id: 10,
+    slug: 'survivorship-checklist-make-an-impact',
+    title: 'Survivorship Checklist - Make an Impact',
+    subtitle: 'How to Help Clients When They Need it the Most',
+    description: 'Learn how providing a survivorship checklist at policy delivery can reinforce the emotional value of life insurance and guide families through critical moments.',
+    date: 'May 10, 2026',
+    readTime: '4 min read',
+    imageUrl: '/pictures/survivor.jpg',
+    videoUrl: 'https://www.youtube.com/embed/QwizZIvmygA',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "As a financial advisor, you sell products that help clients at their most critical moments. But the problem they face is more than just money—they need peace of mind and guidance."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">A Personal Story</h2>
+      <p>
+        When I was 20 years old, my father passed away. He died with his finances in a mess, with no will or trust, and I was the oldest son. I had just left for college and now suddenly I had to deal with something I was not prepared for, and I had NO IDEA what to do.
+      </p>
+      <p>
+        How does a mortgage get paid, or is there any money at all? It was the most stressful part of my life and I wouldn't wish it on anyone.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Where You Come Into the Story</h2>
+      <p>
+        As a financial advisor, you sell products that help clients at this exact moment in their life. The life insurance policy you sold solves the immediate financial problems families face. But the problem is more than just money. It's about peace of mind and knowing things will be okay.
+      </p>
+      <p>
+        That's why I created this <a href="/downloads/survivor_checklist.pdf" download class="text-brand-blue hover:text-brand-accent transition-colors underline"><strong>Survivorship Checklist</strong></a>.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">What's in the Checklist?</h2>
+      <p>
+        This checklist outlines exactly what the family needs to do in those critical first few days and weeks.
+      </p>
+      <ul class="list-disc pl-6 space-y-4 text-gray-600 my-8">
+        <li><strong>The First 24 Hours:</strong> They need to know to check for organ donation authorizations, make arrangements for any pets, cancel regular elder assistance services like Meals on Wheels, and purchase 10 to 20 certified copies of the death certificate from the mortuary.</li>
+        <li><strong>The Next 30 Days:</strong> It guides them to notify the Social Security Administration to stop checks, contact the Veterans Administration, and locate vital documents like a will, trusts, insurance policies, and real estate deeds.</li>
+      </ul>
+      <p>
+        These were all things I had to learn how to do the hard way.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Secret to Policy Delivery</h4>
+        <p class="mb-6 text-gray-700">
+          Here is the secret: You give this to the client when you deliver the policy. It will already have your <strong>NAME AND PHONE NUMBER</strong> right there on the checklist. It reinforces the emotional reasons <em>WHY</em> a person is buying a life insurance policy and what it means to have one.
+        </p>
+        <a href="/downloads/survivor_checklist.pdf" download class="inline-block bg-brand-blue !text-white font-bold py-3 px-6 rounded hover:bg-brand-blue/90 transition-colors no-underline">
+          Download The Survivorship Checklist
+        </a>
+      </div>
+
+      <p class="mt-8 font-bold text-xl">
+        My life would have been much different at the lowest time in my life if I had had a checklist like this. Please use it to help your next beneficiary.
+      </p>
+    `
   }
 ];
