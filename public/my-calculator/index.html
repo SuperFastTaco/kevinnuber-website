@@ -1,1 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Market History Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="left-column" aria-label="Calculator controls">
+        <div class="market-card">
+          <h1>Select Market</h1>
+          <div class="market-controls">
+            <label>
+              <span>Market</span>
+              <select id="marketSelect"></select>
+            </label>
+            <label>
+              <span>Start</span>
+              <select id="startYear"></select>
+            </label>
+            <label>
+              <span>End</span>
+              <select id="endYear"></select>
+            </label>
+          </div>
+        </div>
 
+        <section class="panel limits-panel" aria-labelledby="limitsTitle">
+          <h2 id="limitsTitle">Optional Limits</h2>
+          <div class="limits-grid">
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="floorEnabled" data-limit="floor" type="checkbox" checked>
+                <span>Floor</span>
+              </span>
+              <input id="floorValue" data-input="floor" type="text" inputmode="decimal" value="0%">
+            </label>
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="bufferEnabled" data-limit="buffer" type="checkbox">
+                <span>Buffer</span>
+              </span>
+              <input id="bufferValue" data-input="buffer" type="text" inputmode="decimal" value="0%" disabled>
+            </label>
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="capEnabled" data-limit="cap" type="checkbox" checked>
+                <span>Cap</span>
+              </span>
+              <input id="capValue" data-input="cap" type="text" inputmode="decimal" value="12%">
+            </label>
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="participationEnabled" data-limit="participation" type="checkbox">
+                <span>Partic.</span>
+              </span>
+              <input id="participationValue" data-input="participation" type="text" inputmode="decimal" value="70%" disabled>
+            </label>
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="spreadEnabled" data-limit="spread" type="checkbox">
+                <span>Spread</span>
+              </span>
+              <input id="spreadValue" data-input="spread" type="text" inputmode="decimal" value="0%" disabled>
+            </label>
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="feeEnabled" data-limit="fee" type="checkbox">
+                <span>Fee</span>
+              </span>
+              <input id="feeValue" data-input="fee" type="text" inputmode="decimal" value="0%" disabled>
+            </label>
+            <label class="limit-control">
+              <span class="check-row">
+                <input id="multiYearEnabled" data-limit="multiYear" type="checkbox">
+                <span>Multi-Yr</span>
+              </span>
+              <input id="multiYearValue" data-input="multiYear" type="number" min="1" step="1" value="2" disabled>
+            </label>
+          </div>
+        </section>
+
+        <section class="stats-block" aria-labelledby="statsTitle">
+          <div class="stats-heading">
+            <h2 id="statsTitle">Market Statistics</h2>
+            <span>Actual</span>
+            <span>Limited</span>
+          </div>
+          <div class="stats-panel">
+            <div class="stat-row">
+              <span>Number of Years Selected</span>
+              <output id="actualYears"></output>
+              <output id="limitedYears"></output>
+            </div>
+            <div class="stat-row">
+              <span>Average ROR Over Period</span>
+              <output id="actualAverage"></output>
+              <output id="limitedAverage"></output>
+            </div>
+            <div class="stat-row">
+              <span>Actual ROR Over Period</span>
+              <output id="actualCagr"></output>
+              <output id="limitedCagr"></output>
+            </div>
+            <div class="stat-row">
+              <span><strong>$1</strong> Invested would equal</span>
+              <output id="actualInvestment"></output>
+              <output id="limitedInvestment"></output>
+            </div>
+          </div>
+          <div class="links-row">
+            <button id="docsButton" type="button">Documentation</button>
+            <button id="sourceButton" type="button">Source</button>
+          </div>
+        </section>
+      </section>
+
+      <section class="right-column" aria-labelledby="returnsTitle">
+        <h2 id="returnsTitle">Market Returns</h2>
+        <div class="table-shell">
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Annual Return %</th>
+                <th>Limited Return %</th>
+                <th>$1 Investment</th>
+                <th>Limited $ Investment</th>
+              </tr>
+            </thead>
+            <tbody id="returnsBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="infoDialog">
+      <div class="dialog-head">
+        <h2 id="dialogTitle"></h2>
+        <button id="closeDialog" type="button" aria-label="Close">x</button>
+      </div>
+      <pre id="dialogBody"></pre>
+    </dialog>
+
+    <script src="./market-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
