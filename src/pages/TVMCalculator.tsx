@@ -163,156 +163,156 @@ export default function TVMCalculator() {
   };
 
   return (
-    <div className="py-24 bg-brand-light min-h-[80vh] flex items-center justify-center p-4">
+    <div className="py-32 bg-brand-light min-h-[80vh] flex items-center justify-center p-4">
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         className="w-full max-w-2xl bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200"
       >
-        <div className="bg-brand-blue p-8 text-white relative">
-          <div className="absolute top-0 right-0 p-4 opacity-10">
-            <Calculator size={120} />
+      <div className="bg-brand-blue p-8 text-white relative">
+        <div className="absolute top-0 right-0 p-4 opacity-10">
+          <Calculator size={120} />
+        </div>
+        <h1 className="text-4xl font-serif font-bold mb-2">TVM Calculator</h1>
+        <p className="text-brand-accent font-medium uppercase tracking-widest text-sm">Time Value of Money</p>
+      </div>
+
+      <div className="p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          {/* Input Groups */}
+          <div className="space-y-6">
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
+                Number of Periods (N)
+                <button onClick={solveForN} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
+              </label>
+              <input 
+                type="text" 
+                value={n} 
+                onChange={(e) => setN(e.target.value)}
+                className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
+                placeholder="0.00"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
+                Annual Interest Rate (I/Y %)
+                <button onClick={solveForRate} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
+              </label>
+              <input 
+                type="text" 
+                value={iy} 
+                onChange={(e) => setIy(e.target.value)}
+                className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
+                placeholder="0.00 %"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
+                Present Value (PV)
+                <button onClick={solveForPV} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
+              </label>
+              <input 
+                type="text" 
+                value={pv} 
+                onChange={(e) => setPv(e.target.value)}
+                className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
+                placeholder="$ 0.00"
+              />
+            </div>
           </div>
-          <h1 className="text-4xl font-serif font-bold mb-2">TVM Calculator</h1>
-          <p className="text-brand-accent font-medium uppercase tracking-widest text-sm">Time Value of Money</p>
+
+          <div className="space-y-6">
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
+                Periodic Payment (PMT)
+                <button onClick={solveForPMT} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
+              </label>
+              <input 
+                type="text" 
+                value={pmt} 
+                onChange={(e) => setPmt(e.target.value)}
+                className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
+                placeholder="$ 0.00"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
+                Future Value (FV)
+                <button onClick={solveForFV} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
+              </label>
+              <input 
+                type="text" 
+                value={fv} 
+                onChange={(e) => setFv(e.target.value)}
+                className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
+                placeholder="$ 0.00"
+              />
+            </div>
+
+            <div className="pt-2">
+              <label className="block text-sm font-semibold text-gray-700 mb-3">Payment Timing</label>
+              <div className="flex p-1 bg-slate-100 rounded-xl overflow-hidden border border-gray-200">
+                <button 
+                  onClick={() => setType('0')}
+                  className={`flex-1 py-2 text-sm font-bold uppercase rounded-lg transition-all ${type === '0' ? 'bg-white shadow text-brand-blue' : 'text-gray-500 hover:text-brand-blue'}`}
+                >
+                  End
+                </button>
+                <button 
+                  onClick={() => setType('1')}
+                  className={`flex-1 py-2 text-sm font-bold uppercase rounded-lg transition-all ${type === '1' ? 'bg-white shadow text-brand-blue' : 'text-gray-500 hover:text-brand-blue'}`}
+                >
+                  Begin
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="p-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            {/* Input Groups */}
-            <div className="space-y-6">
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
-                  Number of Periods (N)
-                  <button onClick={solveForN} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
-                </label>
-                <input 
-                  type="text" 
-                  value={n} 
-                  onChange={(e) => setN(e.target.value)}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
-                  placeholder="0.00"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
-                  Annual Interest Rate (I/Y %)
-                  <button onClick={solveForRate} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
-                </label>
-                <input 
-                  type="text" 
-                  value={iy} 
-                  onChange={(e) => setIy(e.target.value)}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
-                  placeholder="0.00 %"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
-                  Present Value (PV)
-                  <button onClick={solveForPV} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
-                </label>
-                <input 
-                  type="text" 
-                  value={pv} 
-                  onChange={(e) => setPv(e.target.value)}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
-                  placeholder="$ 0.00"
-                />
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
-                  Periodic Payment (PMT)
-                  <button onClick={solveForPMT} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
-                </label>
-                <input 
-                  type="text" 
-                  value={pmt} 
-                  onChange={(e) => setPmt(e.target.value)}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
-                  placeholder="$ 0.00"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2 flex items-center justify-between">
-                  Future Value (FV)
-                  <button onClick={solveForFV} className="text-xs text-brand-blue hover:text-brand-accent font-bold uppercase transition-colors">Solve</button>
-                </label>
-                <input 
-                  type="text" 
-                  value={fv} 
-                  onChange={(e) => setFv(e.target.value)}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-lg py-3 px-4 focus:ring-2 focus:ring-brand-accent focus:border-transparent outline-none transition-all font-mono"
-                  placeholder="$ 0.00"
-                />
-              </div>
-
-              <div className="pt-2">
-                <label className="block text-sm font-semibold text-gray-700 mb-3">Payment Timing</label>
-                <div className="flex p-1 bg-slate-100 rounded-xl overflow-hidden border border-gray-200">
-                  <button 
-                    onClick={() => setType('0')}
-                    className={`flex-1 py-2 text-sm font-bold uppercase rounded-lg transition-all ${type === '0' ? 'bg-white shadow text-brand-blue' : 'text-gray-500 hover:text-brand-blue'}`}
-                  >
-                    End
-                  </button>
-                  <button 
-                    onClick={() => setType('1')}
-                    className={`flex-1 py-2 text-sm font-bold uppercase rounded-lg transition-all ${type === '1' ? 'bg-white shadow text-brand-blue' : 'text-gray-500 hover:text-brand-blue'}`}
-                  >
-                    Begin
-                  </button>
-                </div>
-              </div>
-            </div>
+        {/* Advanced Settings */}
+        <div className="border-t border-gray-100 pt-8">
+          <div className="flex items-center gap-2 mb-4 text-gray-400">
+            <Info size={16} />
+            <span className="text-xs font-bold uppercase tracking-wider">Compounding Settings</span>
           </div>
-
-          {/* Advanced Settings */}
-          <div className="border-t border-gray-100 pt-8">
-            <div className="flex items-center gap-2 mb-4 text-gray-400">
-              <Info size={16} />
-              <span className="text-xs font-bold uppercase tracking-wider">Compounding Settings</span>
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1">Payments / Year (P/Y)</label>
+              <input 
+                type="number" 
+                value={py} 
+                onChange={(e) => setPy(e.target.value)}
+                className="w-full bg-transparent border-b border-gray-200 py-1 text-sm focus:border-brand-accent outline-none font-mono"
+              />
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1">Payments / Year (P/Y)</label>
-                <input 
-                  type="number" 
-                  value={py} 
-                  onChange={(e) => setPy(e.target.value)}
-                  className="w-full bg-transparent border-b border-gray-200 py-1 text-sm focus:border-brand-accent outline-none font-mono"
-                />
-              </div>
-              <div>
-                <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1">Compounding / Year (C/Y)</label>
-                <input 
-                  type="number" 
-                  value={cy} 
-                  onChange={(e) => setCy(e.target.value)}
-                  className="w-full bg-transparent border-b border-gray-200 py-1 text-sm focus:border-brand-accent outline-none font-mono"
-                />
-              </div>
+            <div>
+              <label className="block text-[10px] font-bold text-gray-400 uppercase mb-1">Compounding / Year (C/Y)</label>
+              <input 
+                type="number" 
+                value={cy} 
+                onChange={(e) => setCy(e.target.value)}
+                className="w-full bg-transparent border-b border-gray-200 py-1 text-sm focus:border-brand-accent outline-none font-mono"
+              />
             </div>
-          </div>
-
-          <div className="mt-12 flex justify-between items-center">
-            <button 
-              onClick={reset}
-              className="flex items-center gap-2 text-gray-400 hover:text-brand-blue transition-colors text-sm font-bold uppercase"
-            >
-              <RotateCcw size={16} />
-              Reset All
-            </button>
-            <div className="text-[10px] text-gray-300 font-medium">Use positive values for inflows, negative values for outflows.</div>
           </div>
         </div>
-      </motion.div>
-    </div>
-  );
+
+        <div className="mt-12 flex justify-between items-center">
+          <button 
+            onClick={reset}
+            className="flex items-center gap-2 text-gray-400 hover:text-brand-blue transition-colors text-sm font-bold uppercase"
+          >
+            <RotateCcw size={16} />
+            Reset All
+          </button>
+          <div className="text-[10px] text-gray-300 font-medium">Use positive values for inflows, negative values for outflows.</div>
+        </div>
+      </div>
+    </motion.div>
+  </div>
+);
 }
