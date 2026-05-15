@@ -12,6 +12,7 @@ import Process from './pages/Process';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Personal from './pages/Personal';
+import TVMCalculator from './pages/TVMCalculator';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="personal" element={<Personal />} />
+          <Route path="tvm-calculator" element={<TVMCalculator />} />
         </Route>
       </Routes>
     </Router>
