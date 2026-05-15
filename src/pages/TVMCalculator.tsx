@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Calculator, Info, RotateCcw } from 'lucide-react';
 
+import Layout from '../components/Layout';
+
 export default function TVMCalculator() {
   const [n, setN] = useState('');
   const [iy, setIy] = useState('');
@@ -163,12 +165,13 @@ export default function TVMCalculator() {
   };
 
   return (
-    <div className="py-24 bg-brand-light min-h-[80vh] flex items-center justify-center p-4">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="w-full max-w-2xl bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200"
-      >
+    <Layout>
+      <div className="py-32 bg-brand-light min-h-[80vh] flex items-center justify-center p-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="w-full max-w-2xl bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-200"
+        >
         <div className="bg-brand-blue p-8 text-white relative">
           <div className="absolute top-0 right-0 p-4 opacity-10">
             <Calculator size={120} />
@@ -314,5 +317,6 @@ export default function TVMCalculator() {
         </div>
       </motion.div>
     </div>
+    </Layout>
   );
 }
