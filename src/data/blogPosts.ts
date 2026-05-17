@@ -587,5 +587,84 @@ export const blogPosts: BlogPost[] = [
         My life would have been much different at the lowest time in my life if I had had a checklist like this. Please use it to help your next beneficiary.
       </p>
     `
+  },
+  {
+    id: 11,
+    slug: 'life-insurance-policy-review-system',
+    title: 'Life Insurance Policy Review System',
+    subtitle: 'Stop Letting Client Policies Sit in a Drawer',
+    description: 'Permanent life insurance policies are often forgotten. Discover how changes in interest rates and mortality tables create a massive opportunity to provide value through a streamlined In-Force Review process.',
+    date: 'May 17, 2026',
+    readTime: '4 min read',
+    imageUrl: '/pictures/PolicyReviewSystem.png',
+    videoUrl: 'https://www.youtube.com/embed/TfES5TJ71kE',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "Most of your clients are incredibly diligent when it comes to their household finances... But when it comes to permanent life insurance, those same clients tend to ‘set it and forget it’."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Old Life Insurance Policy Problem</h2>
+      <p>
+        Most of your clients are incredibly diligent when it comes to their household finances. If interest rates drop, they’re the first ones to call about a mortgage refinance. Every year, they shop their car and home insurance to make sure they aren't overpaying for the same coverage.
+      </p>
+      <p>
+        But when it comes to permanent life insurance, those same clients tend to "set it and forget it." They buy a policy, put it in a drawer, and twenty years later, they’re still paying premiums on a product that might be completely outdated.
+      </p>
+      <p>
+        Right now, we are seeing a massive opportunity to provide value here, because two major things have changed in the industry.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Why Now?</h2>
+      <p>
+        <strong>First, interest rates.</strong> For a decade, rates were at historic lows, which put a strain on older permanent policies. Today, with rates significantly higher, new policies can capitalize on that yield to produce much better results.
+      </p>
+      <p>
+        <strong>Second, people are simply living longer.</strong> Insurance companies have updated their mortality tables to reflect this, meaning the actual internal cost of insurance is often lower in a modern policy than it was in one written 15 or 20 years ago.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">A Streamlined, Three-Step Process</h2>
+      <p>
+        The problem for most advisors is that reviewing these policies feels like a mountain of paperwork. But we’ve fixed that. We’ve turned the "In-Force Review" into a streamlined, three-step process:
+      </p>
+      
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Step 1: The Authorization</h3>
+      <p>
+        All you need is a signature. You have your client sign a simple authorization form—digital or wet—that allows our team to talk to their current insurance carrier. That’s it. Your work is essentially done.
+      </p>
+      <p class="mt-4">
+        <a href="/downloads/Authorizaton.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-brand-blue font-bold hover:text-brand-accent transition-colors">
+          Download the Authorization Form
+          <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+        </a>
+      </p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Step 2: The Heavy Lifting</h3>
+      <p>
+        Our team takes that authorization and goes to work. We contact the carrier and request what’s called an "In-Force Illustration." We find out exactly how that policy is performing today, what the projected costs are, and when it is scheduled to expire based on current assumptions.
+      </p>
+
+      <h3 class="text-2xl font-bold text-brand-blue mt-8 mb-4">Step 3: The Side-by-Side Analysis</h3>
+      <p>
+        Once we have the data, we run a thorough health check. We compare the current policy against the best-in-class options available today. We aren't just looking for a cheaper premium—we're looking for opportunities to buy more death benefit for the same dollar, or to generate significantly higher cash value growth.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Final Result</h4>
+        <p class="mb-0 italic text-gray-700">
+          "The final result is a comprehensive, client-ready report. It shows the 'Health' of their current policy and provides a clear, side-by-side comparison of what a modern strategy looks like."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Provide a Massive Win</h2>
+      <p>
+        This is one of the easiest ways to provide a massive "win" for your clients. You’re showing them how to capitalize on current rates and updated mortality costs without them having to do any of the legwork.
+      </p>
+      <p class="font-bold mt-8 text-xl">
+        Stop letting your clients' policies sit in a drawer. Let’s run a health check and see if we can make their money work harder.
+      </p>
+    `
   }
 ];
