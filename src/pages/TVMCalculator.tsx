@@ -42,15 +42,23 @@ export default function TVMCalculator() {
     const fval = parseVal(fv);
     const t = parseInt(type);
 
+    // Heuristic for users who don't follow sign convention
+    // If PV and FV are same sign, or PV is 0 and PMT and FV are same sign
+    let fvalAdj = fval;
+    if ((pval !== 0 && fval !== 0 && Math.sign(pval) === Math.sign(fval)) || 
+        (pval === 0 && pmtVal !== 0 && fval !== 0 && Math.sign(pmtVal) === Math.sign(fval))) {
+      fvalAdj = -fval;
+    }
+
     if (r === 0) {
       if (pmtVal === 0) return;
-      const res = -(pval + fval) / pmtVal;
+      const res = -(pval + fvalAdj) / pmtVal;
       setN(Math.abs(res).toFixed(4));
       return;
     }
 
     try {
-      const num = pmtVal * (1 + r * t) - fval * r;
+      const num = pmtVal * (1 + r * t) - fvalAdj * r;
       const den = pval * r + pmtVal * (1 + r * t);
       const res = Math.log(num / den) / Math.log(1 + r);
       setN(Math.abs(res).toFixed(4));
@@ -68,13 +76,21 @@ export default function TVMCalculator() {
     const pyVal = parseVal(py);
     const cyVal = parseVal(cy);
 
+    // Heuristic for users who don't follow sign convention
+    // If PV and FV are same sign, or PV is 0 and PMT and FV are same sign
+    let fvalAdj = fval;
+    if ((pval !== 0 && fval !== 0 && Math.sign(pval) === Math.sign(fval)) || 
+        (pval === 0 && pmtVal !== 0 && fval !== 0 && Math.sign(pmtVal) === Math.sign(fval))) {
+      fvalAdj = -fval;
+    }
+
     let low = -0.999999 / pyVal;
     let high = 100.0;
     
     const f = (r: number) => {
-      if (r === 0) return pval + pmtVal * nVal + fval;
+      if (r === 0) return pval + pmtVal * nVal + fvalAdj;
       const pow = Math.pow(1 + r, nVal);
-      return pval * pow + pmtVal * (1 + r * t) * (pow - 1) / r + fval;
+      return pval * pow + pmtVal * (1 + r * t) * (pow - 1) / r + fvalAdj;
     };
 
     // Robust binary search
