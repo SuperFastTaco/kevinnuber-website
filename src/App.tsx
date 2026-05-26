@@ -14,6 +14,7 @@ import BlogPost from './pages/BlogPost';
 import Personal from './pages/Personal';
 import TVMCalculator from './pages/TVMCalculator';
 import MarketHistoryCalculator from './pages/MarketHistoryCalculator';
+import Contact from './pages/Contact';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="personal" element={<Personal />} />
           <Route path="tvm-calculator" element={<TVMCalculator />} />
           <Route path="market-history-calculator" element={<MarketHistoryCalculator />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </Router>
