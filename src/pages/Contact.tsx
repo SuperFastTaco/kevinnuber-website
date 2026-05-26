@@ -42,10 +42,10 @@ export default function Contact() {
       title: "New Business Contacts",
       contacts: [
         {
-          name: "Amanda Browning",
+          name: "Liz Tisdale",
           role: "Life New Business",
-          email: "amanda.browning@simplicitygroup.com",
-          phone: "888-543-3776, ext. 3284"
+          email: "liz.tisdale@simplicitygroup.com",
+          phone: "763-200-7956"
         },
         {
           name: "Megan Falcon",
