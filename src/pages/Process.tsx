@@ -25,7 +25,7 @@ export default function Process() {
           <div className="mt-12 mx-auto max-w-4xl rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black">
             <iframe
               className="w-full aspect-video"
-              src="https://www.youtube.com/embed/zzI2mFXVs8I"
+              src="https://www.youtube.com/embed/AZu8QmCVKMs?si=oH2gebQ4CNTIeLIN"
               title="The Advisor Lifecycle"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
