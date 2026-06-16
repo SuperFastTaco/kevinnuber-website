@@ -596,7 +596,7 @@ export const blogPosts: BlogPost[] = [
     description: 'Permanent life insurance policies are often forgotten. Discover how changes in interest rates and mortality tables create a massive opportunity to provide value through a streamlined In-Force Review process.',
     date: 'May 17, 2026',
     readTime: '4 min read',
-    imageUrl: '/pictures/PolicyReviewSystem.png',
+    imageUrl: '/pictures/PolicyReviewSystem-1.png',
     videoUrl: 'https://www.youtube.com/embed/TfES5TJ71kE',
     category: 'Practice Management',
     content: `
@@ -664,6 +664,57 @@ export const blogPosts: BlogPost[] = [
       </p>
       <p class="font-bold mt-8 text-xl">
         Stop letting your clients' policies sit in a drawer. Let’s run a health check and see if we can make their money work harder.
+      </p>
+    `
+  },
+  {
+    id: 12,
+    slug: 'iul-done-the-right-way',
+    title: 'IUL Done the Right Way',
+    subtitle: 'Maximize Cash Value by Minimizing the Death Benefit',
+    description: 'Learn why many advisors build Indexed Universal Life the "Wrong Way" and how buying the absolute minimum death benefit the IRS requires cuts internal fees in half.',
+    date: 'June 15, 2026',
+    readTime: '3 min read',
+    imageUrl: '/pictures/IUL Right Way.png',
+    videoUrl: 'https://www.youtube.com/embed/wO2vvy7m48E?si=onBGjSmmT1JseDVw',
+    category: 'Practice Management',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "Indexed Universal Life gets a lot of bad press. And the uncomfortable truth is, sometimes the critics are right. But the problem isn't the product. It's how the advisor built it."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The "Wrong Way" to Build an IUL</h2>
+      <p>
+        The problem is many advisors build IULs the "Wrong Way"—they maximize the death benefit to maximize their own commission. This approach absolutely destroys the client's cash value. It's a fundamental conflict of interest where the advisor's compensation comes at the direct expense of the product's performance.
+      </p>
+      
+      <img src="/pictures/IUL%20Right%20Way.png" alt="Cumulative IUL Expenses Chart" class="w-full h-auto mt-8 mb-8 rounded-lg shadow-md border border-gray-100" />
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Look at the Math</h2>
+      <p>
+        We ran the exact same client through two designs. The two scenarios are built around the exact same premium. The "Wrong Way" has the most death benefit, so it pays the most commission. The "Right Way" shows the least death benefit and the least commission.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Real Cost of Commission-Heavy Design</h4>
+        <p class="mb-0 italic text-gray-700">
+          "Over ten years, the commission-heavy design strips out over $119,000 in internal fees. But when we design it the 'Right Way'—buying the absolute minimum death benefit the IRS requires—we cut those fees in half, down to just $56,000."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Cash Value Impact</h2>
+      <p>
+        The consequence of high expenses is obvious: less money compounding for the client. The chart below illustrates the massive difference in cash value accumulation over time when those reduced internal costs are allowed to stay in the policy and grow. Ultimately, prioritizing cash value over an inflated death benefit leads to significantly better long-term performance.
+      </p>
+
+      <img src="/pictures/Picture1.png" alt="Cash Value Accumulation Difference" class="w-full h-auto mt-8 mb-8 rounded-lg shadow-md border border-gray-100" />
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Right Way Wins</h2>
+      <p>
+        By minimizing the death benefit to the absolute minimum that the IRS requires, you minimize the internal expenses of the policy. This allows the client's premiums to go directly toward building cash value rather than paying unnecessary fees and excessive advisor commissions. 
+      </p>
+      <p>
+        If you want to build lasting relationships with your clients based on trust and performance, you have to build IULs the Right Way. It's better for the client, and ultimately, a much better business model for the advisor.
       </p>
     `
   }
