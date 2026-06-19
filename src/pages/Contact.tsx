@@ -148,8 +148,8 @@ export default function Contact() {
           </p>
           <div className="mt-6">
             <a 
-              href="/downloads/Simplicity_Team_Contact_Sheet_2026.pdf" 
-              download="Simplicity_Team_Contact_Sheet_2026.pdf"
+              href="/downloads/Simplicity_Team_Contact_Sheet_2026_kevin.pdf" 
+              download="Simplicity_Team_Contact_Sheet_2026_kevin.pdf"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue hover:text-brand-accent transition-colors bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-200"
