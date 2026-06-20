@@ -717,5 +717,70 @@ export const blogPosts: BlogPost[] = [
         If you want to build lasting relationships with your clients based on trust and performance, you have to build IULs the Right Way. It's better for the client, and ultimately, a much better business model for the advisor.
       </p>
     `
+  },
+  {
+    id: 13,
+    slug: 'indexing-performance-summary',
+    title: 'Indexing Performance Summary',
+    subtitle: 'Looking Past the Pitch to See Real World Performance',
+    description: 'Tired of complex, proprietary indexing strategies that look perfect in back-testing but disappoint in the real world? Discover our performance report that strips away the marketing fluff.',
+    date: 'June 19, 2026',
+    readTime: '3 min read',
+    imageUrl: 'https://img.youtube.com/vi/M348qec8YL4/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/embed/M348qec8YL4',
+    category: 'Insights',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "These proprietary volatility control indices always look good on paper—or else why would you use them? But then they consistently disappoint in the real world."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The "Black Box" Problem</h2>
+      <p>
+        It feels like every other week an insurance company comes into our office pitching a revolutionary new proprietary index. They come up with crazy names like the "Global Volatility Shield" or "Alpha Omega Dynamic Balance Index." They bring perfect, back-tested charts showing 45-degree angles of consistent growth regardless of market conditions.
+      </p>
+      <p>
+        But if you've been in the business for more than a few years, you know the frustration. The problem is what we call the <strong>"black box."</strong> These indices are so complex that even the home office struggles to explain them. With numerous internal moving parts and volatility overlays, it becomes nearly impossible for you—or your client—to understand why they received a 0% credit when the S&P 500 was up 10 or 15%.
+      </p>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">Stripping Away the Marketing Fluff</h4>
+        <p class="mb-0 italic text-gray-700">
+          "We all burned out on this hype. We're tired of being the ones who have to explain to a client why this strategy hasn't produced a meaningful credit three years in a row."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Get the Facts</h2>
+      <p>
+        You want transparency, and you're sick and tired of the sales pitch. That's why we’ve compiled a comprehensive report that tracks the historical performance of all the most popular indexing strategies in the industry.
+      </p>
+      <p>
+        This report strips away the marketing fluff and gives you the raw data over multiple periods of time. You can look up your favorite proprietary index, see how it has actually performed, and compare it side-by-side with other options on the market.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Your Next Steps</h2>
+      <p>
+        Our goal is simple: we want you to have the facts before you design your next case. Never take an insurance company's word for it, and definitely do not rely on back-tested data that was engineered to look perfect.
+      </p>
+      <p class="font-bold mt-8 text-xl">
+        Review the Index Performance Report below. Use it to do a health check on the strategies you're currently recommending, and let me know if those results surprise you.
+      </p>
+
+      <div class="mt-8">
+        <a 
+          href="/downloads/Index_Performance_Report.pdf" 
+          download="Index_Performance_Report.pdf"
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue hover:text-brand-accent transition-colors bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" x2="12" y1="15" y2="3"></line>
+          </svg>
+          Download Index Performance Report PDF
+        </a>
+      </div>
+    `
   }
 ];
