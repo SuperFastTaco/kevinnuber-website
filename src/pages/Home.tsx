@@ -46,7 +46,7 @@ export default function Home() {
                 Build, Scale, and <span className="text-brand-accent text-5xl sm:text-6xl lg:text-7xl shadow-black inline-block transform scale-105 mx-1">Capitalize</span> Your Practice.
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
-                I am Kevin Nuber, an Advisor Development Consultant. I help seasoned financial professionals overcome unique challenges at every phase of their lifecycle.
+                Many advisors reach a point where more growth just creates more chaos. I help create scalable systems so a practice can produce, serve, and grow beyond the founder.
               </p>
               <div className="mt-10 flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start">
                 <a

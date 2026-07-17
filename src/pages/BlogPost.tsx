@@ -90,6 +90,17 @@ export default function BlogPost() {
 
         {/* Article Body */}
         <article className="bg-white rounded-3xl shadow-xl p-8 sm:p-12 border border-gray-100">
+          <div className="mb-10 flex justify-center">
+            <a 
+              href="https://calendly.com/kevin-nuber" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-brand-accent hover:bg-opacity-90 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <Calendar className="mr-2 h-5 w-5" /> Book a Discovery Call
+            </a>
+          </div>
+
           <div 
             className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-brand-blue prose-p:text-gray-600 prose-strong:text-brand-blue prose-a:text-brand-accent hover:prose-a:underline"
             dangerouslySetInnerHTML={{ __html: post.content }}
@@ -115,7 +126,7 @@ export default function BlogPost() {
             <div>
               <h4 className="text-xl font-serif font-bold text-brand-blue mb-2">Written by Kevin Nuber</h4>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                Advisor Development Consultant helping seasoned financial professionals overcome unique challenges at every phase of their lifecycle.
+                Many advisors reach a point where more growth just creates more chaos. I help create scalable systems so a practice can produce, serve, and grow beyond the founder.
               </p>
               <div className="flex space-x-6">
                 <Link to="/blog" className="text-brand-accent hover:underline text-sm font-bold">
