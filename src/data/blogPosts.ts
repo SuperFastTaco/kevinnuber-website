@@ -843,5 +843,76 @@ export const blogPosts: BlogPost[] = [
         When you craft a power statement that speaks directly to these core desires, your prospects will be waiting for you to ask for the appointment. Do this right, and you'll get more appointments, close more sales, and finally achieve the consistency you've been looking for.
       </p>
     `
+  },
+  {
+    id: 15,
+    slug: 'the-advisor-do-everything-trap',
+    title: 'The Advisor Do-Everything Trap',
+    subtitle: 'Stop Running an Office and Start Building a Business',
+    description: 'Are you acting as the advisor, office manager, and janitor all at once? Learn how to break through the \'Advisor-Do-Everything\' model and scale your practice using our Delegation Diagnostic Worksheet.',
+    date: 'July 18, 2026',
+    readTime: '3 min read',
+    imageUrl: '/pictures/Corrected%20thumbnail2.png',
+    videoUrl: 'https://www.youtube.com/embed/rlZy0vId83c',
+    category: 'Insights',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "True scale happens when you buy your time back. Stop running an office where you do everything, and start building a self-sustaining business."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Single Biggest Bottleneck</h2>
+      <p>
+        After working with countless advisors, I've noticed the single biggest bottleneck holding them back isn't a lack of leads, and it isn't a bad market. It is what I call the <strong>'Advisor-Do-Everything' Model</strong>.
+      </p>
+      <p>
+        It's the practice model where you, the primary producer, are the one answering the phone, opening the mail, making the bank deposits, and scheduling your own appointments. You are essentially acting as the advisor, the office manager, the tech support, and the janitor all at the same time.
+      </p>
+      
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">The Capacity Ceiling</h4>
+        <p class="mb-0 italic text-gray-700">
+          "The problem with this model is simple: Your business cannot grow past your personal physical capacity. When you spend half your day handling clerical work, data entry, or logistics for client events, you are actively stealing time away from the only activities that actually move the needle—being in front of qualified prospects and closing cases."
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Breaking Through the Ceiling</h2>
+      <p>
+        Every elite advisor knows they need to delegate to break through this ceiling. But when you ask them how they plan to do it, they freeze. They don't know where to start, or they try to hand off everything all at once, which just creates absolute chaos in the office.
+      </p>
+      <p>
+        To create a real production breakthrough, you need a systematic approach. And that is exactly what the Delegation Diagnostic Worksheet accomplishes.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Mapping Out Your Roadmap</h2>
+      <p>
+        We took over 70 baseline office tasks—broken down into clear categories like Clerical, Client Marketing, Office Management, and Technology—and we mapped out exactly who owns them today. Here is how you use it to build your roadmap:
+      </p>
+      <ul>
+        <li><strong>Step 1:</strong> Sit down with your team and audit your practice. Next to every task, you mark a simple code: Is it owned by P for the Producer, T for the internal Team, or V for a Third-Party Vendor like your IMO?</li>
+        <li><strong>Step 2:</strong> The minute you finish checking those boxes, the blind spots vanish. Every single line item marked with a 'P' that doesn't directly involve closing revenue instantly becomes your tactical roadmap for delegation over time.</li>
+        <li><strong>Step 3:</strong> Instead of guessing, the worksheet forces you to pick your top five producer-owned tasks to hand off next, complete with a strict 30-day target and notes for execution.</li>
+      </ul>
+
+      <p class="font-bold mt-8 text-xl">
+        Click the link below to download the Delegation Diagnostic Worksheet for free. Run the diagnostic on your practice this week, and let's start building your path to the next level.
+      </p>
+
+      <div class="mt-8">
+        <a 
+          href="/downloads/Delegation_Diagnostic_Worksheet_Edited.pdf" 
+          download="Delegation_Diagnostic_Worksheet_Edited.pdf"
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-sm font-semibold text-brand-blue hover:text-brand-accent transition-colors bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-200"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" x2="12" y1="15" y2="3"></line>
+          </svg>
+          Download Delegation Diagnostic Worksheet PDF
+        </a>
+      </div>
+    `
   }
 ];
