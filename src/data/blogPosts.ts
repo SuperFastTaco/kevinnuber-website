@@ -914,5 +914,57 @@ export const blogPosts: BlogPost[] = [
         </a>
       </div>
     `
+  },
+  {
+    id: 16,
+    slug: 'lock-a-28-percent-return-mid-year',
+    title: 'Lock a 28% Return Mid Year',
+    subtitle: 'Take Control of Market Gains with Index Lock and Auto Lock',
+    description: 'Discover how to lock in index gains mid-year and create a new floor for your client\'s returns using the Auto Lock feature.',
+    date: 'July 25, 2026',
+    readTime: '4 min read',
+    imageUrl: 'https://img.youtube.com/vi/qdkLeJfybk0/maxresdefault.jpg',
+    videoUrl: 'https://www.youtube.com/embed/qdkLeJfybk0',
+    category: 'Insights',
+    content: `
+      <p class="text-xl leading-relaxed font-light italic border-l-4 border-brand-accent pl-6 mb-12">
+        "When clients hesitate to buy because they are worried about market volatility, sequence of returns, or 'perfect timing,' Index Lock is your closing answer."
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Locking in Mid-Year Gains</h2>
+      <p>
+        Imagine being able to lock in a <strong>28% gain</strong> on your client's indexed annuity right now. With the <strong>Index Lock</strong> feature available on specific IUL and FIA products, you can do exactly that.
+      </p>
+      <p>
+        Index Lock allows your clients to lock in their index gains on any business day during their crediting period. They no longer have to hold their breath and wait for the end of the year. If they are happy with the return, they lock it in, and that rate is guaranteed to be credited at their anniversary—no matter what the market does next.
+      </p>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">The Magic of Auto Lock</h2>
+      <p>
+        But the real magic lies in another feature: <strong>Auto Lock</strong>. Your clients don't have to watch the ticker every day. With Auto Lock, you can set two types of targets:
+      </p>
+      <ul>
+        <li><strong>Upper Target:</strong> If your client has a goal of, say, 10%, you set that as the target. The moment the index interest rate hits that threshold at the end of a business day, the lock triggers automatically.</li>
+        <li><strong>Lower Target:</strong> What if the index has already experienced an extraordinary run, and your client wants to let it ride without risking what they've already gained? That's where the Lower Target becomes your ultimate sales tool.</li>
+      </ul>
+
+      <div class="bg-slate-50 p-8 rounded-lg my-12 border border-gray-100">
+        <h4 class="text-brand-accent font-bold text-lg mb-4">Real-World Application: The 28% Return</h4>
+        <p class="mb-0 text-gray-700">
+          Let’s look at a real-world example. A client's strategy is currently sitting at a jaw-dropping <strong>28% index return</strong>. Instead of locking it immediately and missing out on further growth, you can establish a <strong>Lower Target of 25%</strong>.
+        </p>
+        <p class="mt-4 text-gray-700">
+          This effectively creates a brand-new floor of 25%. If the index keeps climbing, the client keeps winning. But if the market starts to slide, the absolute moment the index drops back down and touches that 25% threshold, the Auto Lock triggers. Your client walks away with a locked-in 25% return, completely insulated from any further market drops.
+        </p>
+      </div>
+
+      <h2 class="text-3xl font-serif font-bold text-brand-blue mt-12 mb-6">Your Closing Answer</h2>
+      <p>
+        When clients hesitate to buy because they are worried about market volatility, sequence of returns, or "perfect timing," Index Lock is your closing answer. It transfers control back to the client, guarantees positive credits, and turns "zero is your hero" into "locking in double-digit wins."
+      </p>
+      <p class="font-bold mt-8 text-xl">
+        Start introducing this feature in your case designs this week, and watch your closing rates soar.
+      </p>
+    `
   }
 ];
