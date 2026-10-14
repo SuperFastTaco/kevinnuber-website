@@ -1,14 +1,85 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kevin Nuber - Professional Advisor" />
-    <title>Kevin Nuber</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f4ec">
+    <meta name="description" content="A new personal website from Kevin Nuber. Something new is on the horizon. Come back soon.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Kevin Nuber — Coming Soon</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+      :root { color-scheme: light; --paper: #f7f4ec; --ink: #293e36; --muted: #626b61; --line: #deded2; }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .page { min-height: 100svh; display: flex; flex-direction: column; max-width: 1600px; margin: auto; padding: 0 6vw; }
+      header { display: flex; justify-content: space-between; align-items: center; padding: 35px 0; gap: 20px; }
+      .signature { font: 25px Georgia, "Times New Roman", serif; letter-spacing: -.7px; }
+      .personal { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted); }
+      main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 0 74px; }
+      .landscape { width: min(430px, 90%); height: auto; margin-bottom: 34px; overflow: visible; }
+      .sun { animation: sunrise 2s ease-out both; transform-origin: 215px 113px; }
+      .status { display: flex; align-items: center; gap: 10px; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin: 0 0 23px; }
+      .status::before { content: ""; height: 6px; width: 6px; border-radius: 50%; background: #a45f46; }
+      h1 { font: normal clamp(44px, 6.3vw, 82px)/1.05 Georgia, "Times New Roman", serif; letter-spacing: -3px; margin: 0; }
+      h1 span { display: block; }
+      .intro { color: var(--muted); font-size: 15px; line-height: 1.9; max-width: 380px; margin: 27px 0 0; }
+      .note { margin-top: 20px; font: italic 18px Georgia, "Times New Roman", serif; color: #6c7565; }
+      footer { display: flex; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line); padding: 22px 0 25px; color: var(--muted); font-size: 11px; letter-spacing: .3px; }
+      @keyframes sunrise { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+      @media (max-width: 600px) {
+        .page { padding: 0 24px; }
+        header { padding: 27px 0; }
+        .signature { font-size: 23px; }
+        .personal { font-size: 8px; letter-spacing: 1.4px; }
+        main { padding: 48px 0 60px; }
+        .landscape { margin-bottom: 30px; }
+        h1 { letter-spacing: -1.8px; }
+        .intro { font-size: 14px; max-width: 290px; }
+        footer { font-size: 10px; }
+      }
+      @media (prefers-reduced-motion: reduce) { .sun { animation: none; } }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="page">
+      <header>
+        <div class="signature">Kevin Nuber<span aria-hidden="true" style="color:#a45f46">.</span></div>
+        <div class="personal">A personal website</div>
+      </header>
+      <main>
+        <svg class="landscape" viewBox="0 0 430 210" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="sky" x1="215" y1="15" x2="215" y2="184" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#f0e8d9"/><stop offset="1" stop-color="#f7f4ec"/>
+            </linearGradient>
+            <linearGradient id="sun" x1="215" y1="55" x2="215" y2="157" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ce8a64"/><stop offset="1" stop-color="#deb48d"/>
+            </linearGradient>
+            <clipPath id="horizon"><path d="M23 167C46 165 78 165 112 167C158 170 181 178 215 178C258 178 277 156 319 151C352 147 385 150 407 160V210H23Z"/></clipPath>
+          </defs>
+          <path d="M78 177V152C78 76 139 15 215 15C291 15 352 76 352 152V177H78Z" fill="url(#sky)"/>
+          <path d="M65 155C65 72 132 2 215 2C298 2 365 72 365 155" stroke="#dbd9cc" stroke-width="1" stroke-dasharray="2 7"/>
+          <circle class="sun" cx="215" cy="113" r="53" fill="url(#sun)"/>
+          <path d="M37 178C97 158 137 149 180 155C224 161 253 177 292 174C332 171 361 153 394 151" stroke="#bec5b2" stroke-width="1.2"/>
+          <path d="M23 167C46 165 78 165 112 167C158 170 181 178 215 178C258 178 277 156 319 151C352 147 385 150 407 160V210H23Z" fill="#c3cab7"/>
+          <g clip-path="url(#horizon)">
+            <path d="M17 204C67 181 116 178 164 186C218 195 261 212 320 198C363 188 391 179 419 184V224H17Z" fill="#8f9f89"/>
+            <path d="M7 206C79 202 127 216 191 220C288 226 329 196 422 202V232H7Z" fill="#617a67"/>
+          </g>
+          <path d="M14 210H416" stroke="#9da991" stroke-width="1"/>
+          <path d="M284 76C290 69 296 69 302 76C308 69 314 69 320 76" stroke="#7f8974" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M120 102C124 98 128 98 132 102C136 98 140 98 144 102" stroke="#9c9e87" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <p class="status">Coming soon</p>
+        <h1>Something new is<span>on the horizon.</span></h1>
+        <p class="intro">I'm making a new home for a few of my favorite things. A little life, a little curiosity, and whatever comes next.</p>
+        <p class="note">Come back soon.</p>
+      </main>
+      <footer>
+        <span>&copy; 2026 Kevin Nuber</span>
+        <span>Good things take a little time.</span>
+      </footer>
+    </div>
   </body>
 </html>
-

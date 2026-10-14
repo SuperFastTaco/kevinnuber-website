@@ -1,20 +1,16 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Kevin Nuber's personal website
 
-# Run and deploy your AI Studio app
+A small, standalone coming-soon page for kevinnuber.com. No external services or runtime dependencies are required.
 
-This contains everything you need to run your app locally.
+## Preview
 
-View your app in AI Studio: https://ai.studio/apps/f51447d8-07ff-4666-ba02-d1a81d2c1fc3
+```sh
+npm run build
+npm run preview
+```
 
-## Run Locally
+Open http://127.0.0.1:4173. Vercel publishes only the three files in `dist/`. Former URLs show the same placeholder.
 
-**Prerequisites:**  Node.js
+## Recover the original website
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The full former website and its Git history remain available at the recovery tag `archive/2026-10-14-before-personal-site`. For the original content before the shutdown redirect, inspect commit `d51e223` in a separate checkout. Only restore former professional content to a live site when approved.
