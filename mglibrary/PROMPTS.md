@@ -727,3 +727,53 @@ Generate from the exact spoken passage. Preserve original audio continuously; mu
 DELIVERABLE
 Use the motion framework available in your environment, such as Remotion or Hyperframes. Provide editable source, replaceable asset inputs, and preview/render instructions. Render an MP4 if your environment supports it; otherwise explain what is ready and what still requires rendering. Keep animation deterministic for reliable export. Preserve the described behavior while bringing your own judgment to layout and motion.
 
+## Corner zoom + callout · upper right (corner-zoom-right)
+
+Create a 6-second motion study: Corner zoom + callout · upper right.
+
+GOAL
+The full-screen presenter zooms and reframes toward the left, creating room for an object or words in the upper-right corner, then returns. The essential behavior is a combined zoom and lateral reframe, not a centered punch-in or split-screen layout. Keep the real room background across the full canvas.
+
+FORMAT AND STYLE
+1920×1080, 16:9, 30 fps. Export a silent comparison preview. Use navy #004472, blue #0076BD, white and light gray #E6E7E8, with Arial Nova or Arial. Graphics should be large, simple, and readable with rounded corners and restrained shadows.
+
+SCENE AND SAMPLE COPY
+Use the supplied presenter footage, naturally framed full-screen at first. Zoom to approximately 1.22× and shift the speaker toward the left. Open space in the upper-right corner for this graphic: A compact white boarding-pass-style object: “Your next chapter”, “Destination”, then “More time. More freedom.” Include a simple route line and destination pin. Place it roughly 5.5% from the outer edge and 13% from the top, around 33% of the canvas width. Adjust to the actual face position. Never cover the face or flip the source footage.
+
+ANIMATION BEATS
+0–0.6s: original full-screen presenter. 0.6–1.47s: smoothly zoom and reframe laterally. 1.53–2.07s: graphic enters with a short fade and upward settle, after the crop has opened room. Hold until 4.4s. 4.4–4.8s: clear the graphic. 4.93–5.73s: return to the original crop. End cleanly. Preserve one continuously playing source; the source clock must not restart during any move. Make cue times independently editable for real speech.
+
+ASSETS
+Use a presenter clip I supply and original editable text and vector shapes. If media is missing, use an explicitly labeled placeholder and expose the media input; do not invent a completed live-action preview. Sample copy need not match the silent footage.
+
+ADAPTATION
+Keep the original footage filling the entire canvas and one continuous video timeline mounted. Shift the speaker off-center using a lateral crop; do not use a centered punch-in, mirror the footage, or shrink it into PiP. Reveal the graphic after room opens, clear it before returning, and inspect face, headroom, gestures, and all four video edges. Limit zoom to available source-resolution headroom. For a top-right graphic, translating the enlarged image left by its extra width is a useful starting point. For a top-left graphic, anchor the enlarged image at its left edge so the face moves right. Use a small upward crop adjustment to preserve headroom; verify the actual source. Make these controls editable: Graphic corner, zoom amount, vertical crop, overlay content, source face framing, independent zoom/reveal/clear/return cue frames.
+
+DELIVERABLE
+Provide editable source using Remotion, Hyperframes, or your available motion tool, and an MP4 preview when rendering is supported. Keep animation deterministic. Preserve the treatment’s intent while interpreting typography, imagery, and motion creatively.
+
+## Corner zoom + callout · upper left (corner-zoom-left)
+
+Create a 6-second motion study: Corner zoom + callout · upper left.
+
+GOAL
+The full-screen presenter zooms and reframes toward the right, creating room for an object or words in the upper-left corner, then returns. The essential behavior is a combined zoom and lateral reframe, not a centered punch-in or split-screen layout. Keep the real room background across the full canvas.
+
+FORMAT AND STYLE
+1920×1080, 16:9, 30 fps. Export a silent comparison preview. Use navy #004472, blue #0076BD, white and light gray #E6E7E8, with Arial Nova or Arial. Graphics should be large, simple, and readable with rounded corners and restrained shadows.
+
+SCENE AND SAMPLE COPY
+Use the supplied presenter footage, naturally framed full-screen at first. Zoom to approximately 1.22× and shift the speaker toward the right. Open space in the upper-left corner for this graphic: A compact white word card: small “The idea to remember”, then large “Lead with the outcome.” and a short blue underline. Place it roughly 5.5% from the outer edge and 13% from the top, around 33% of the canvas width. Adjust to the actual face position. Never cover the face or flip the source footage.
+
+ANIMATION BEATS
+0–0.6s: original full-screen presenter. 0.6–1.47s: smoothly zoom and reframe laterally. 1.53–2.07s: graphic enters with a short fade and upward settle, after the crop has opened room. Hold until 4.4s. 4.4–4.8s: clear the graphic. 4.93–5.73s: return to the original crop. End cleanly. Preserve one continuously playing source; the source clock must not restart during any move. Make cue times independently editable for real speech.
+
+ASSETS
+Use a presenter clip I supply and original editable text and vector shapes. If media is missing, use an explicitly labeled placeholder and expose the media input; do not invent a completed live-action preview. Sample copy need not match the silent footage.
+
+ADAPTATION
+Keep the original footage filling the entire canvas and one continuous video timeline mounted. Shift the speaker off-center using a lateral crop; do not use a centered punch-in, mirror the footage, or shrink it into PiP. Reveal the graphic after room opens, clear it before returning, and inspect face, headroom, gestures, and all four video edges. Limit zoom to available source-resolution headroom. For a top-right graphic, translating the enlarged image left by its extra width is a useful starting point. For a top-left graphic, anchor the enlarged image at its left edge so the face moves right. Use a small upward crop adjustment to preserve headroom; verify the actual source. Make these controls editable: Graphic corner, zoom amount, vertical crop, overlay content, source face framing, independent zoom/reveal/clear/return cue frames.
+
+DELIVERABLE
+Provide editable source using Remotion, Hyperframes, or your available motion tool, and an MP4 preview when rendering is supported. Keep animation deterministic. Preserve the treatment’s intent while interpreting typography, imagery, and motion creatively.
+

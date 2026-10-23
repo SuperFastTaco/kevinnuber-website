@@ -323,3 +323,25 @@ Previews: 6 seconds, silent, 960×540, 30 fps. Editable sources: 1920×1080. Dem
 - Source: src/Demos.tsx → SimulatedBCamera
 - Status: Added by request; version 1.0.0
 
+## Corner zoom + callout · upper right (corner-zoom-right)
+
+- Category: Presenter layouts
+- Intent: The full-screen presenter zooms and reframes toward the left, creating room for an object or words in the upper-right corner, then returns.
+- Best for: Making room for a short quote, label, small product object, or visual metaphor while maintaining a full-screen human presence.
+- Guidance: Keep the original footage filling the entire canvas and one continuous video timeline mounted. Shift the speaker off-center using a lateral crop; do not use a centered punch-in, mirror the footage, or shrink it into PiP. Reveal the graphic after room opens, clear it before returning, and inspect face, headroom, gestures, and all four video edges. Limit zoom to available source-resolution headroom.
+- Adapt: Graphic corner, zoom amount, vertical crop, overlay content, source face framing, independent zoom/reveal/clear/return cue frames.
+- Preview: site/media/corner-zoom-right.mp4
+- Source: src/Demos.tsx → CornerZoomDemo
+- Status: Added by request; version 1.0.0
+
+## Corner zoom + callout · upper left (corner-zoom-left)
+
+- Category: Presenter layouts
+- Intent: The full-screen presenter zooms and reframes toward the right, creating room for an object or words in the upper-left corner, then returns.
+- Best for: Making room for a short quote, label, small product object, or visual metaphor while maintaining a full-screen human presence.
+- Guidance: Keep the original footage filling the entire canvas and one continuous video timeline mounted. Shift the speaker off-center using a lateral crop; do not use a centered punch-in, mirror the footage, or shrink it into PiP. Reveal the graphic after room opens, clear it before returning, and inspect face, headroom, gestures, and all four video edges. Limit zoom to available source-resolution headroom.
+- Adapt: Graphic corner, zoom amount, vertical crop, overlay content, source face framing, independent zoom/reveal/clear/return cue frames.
+- Preview: site/media/corner-zoom-left.mp4
+- Source: src/Demos.tsx → CornerZoomDemo
+- Status: Added by request; version 1.0.0
+

@@ -1,3 +1,4 @@
+import {CornerZoomCallout} from './components/CornerZoomCallout';
 import {SimulatedBCamera} from './components/SimulatedBCamera';
 import {OneToThreeBranch} from './components/OneToThreeBranch';
 import React from 'react';
@@ -51,9 +52,28 @@ export const BranchDemo=()=> <OneToThreeBranch title="Three ways your money is t
  {id:'free',label:'Tax-free',revealFrame:110,icon:color=><BranchBucket color={color}/>,highlight:true},
 ]} presenter={<Presenter/>}/>;
 
+
+export const CornerZoomDemo=({corner}:{corner:'top-left'|'top-right'})=> <CornerZoomCallout presenter={<Presenter/>} corner={corner} content={corner==='top-right'?
+ <div style={{background:'rgba(255,255,255,.97)',color:C.navy,borderRadius:22,overflow:'hidden',boxShadow:'0 16px 50px rgba(0,0,0,.12)'}}>
+  <div style={{background:C.navy,color:C.white,padding:'22px 34px',fontSize:27}}>Your next chapter</div>
+  <div style={{padding:'32px 34px 38px'}}>
+   <svg viewBox="0 0 560 65" style={{width:'100%',height:65,display:'block',marginBottom:28}}><circle cx="20" cy="32" r="10" fill={C.blue}/><path d="M40 32 H480" stroke={C.blue} strokeWidth="3" strokeDasharray="8 8"/><path d="M510 8 C480 8 480 40 510 59 C540 40 540 8 510 8 Z" stroke={C.blue} strokeWidth="3" fill="none"/><circle cx="510" cy="26" r="6" fill={C.blue}/></svg>
+   <div style={{fontSize:27,color:C.blue,marginBottom:15}}>Destination</div>
+   <div style={{fontSize:67,fontWeight:700,lineHeight:1.05,letterSpacing:-2}}>More time.<br/>More freedom.</div>
+  </div>
+ </div>:
+ <div style={{background:'rgba(255,255,255,.96)',color:C.navy,borderRadius:22,padding:'38px 40px 42px',boxShadow:'0 16px 50px rgba(0,0,0,.12)'}}>
+  <div style={{fontSize:26,color:C.blue,marginBottom:22}}>The idea to remember</div>
+  <div style={{fontSize:76,fontWeight:700,lineHeight:1.06,letterSpacing:-2}}>Lead with<br/>the outcome.</div>
+  <div style={{width:105,height:5,background:C.blue,marginTop:30}}/>
+ </div>
+}/>;
+
 export const Demo=({id}:{id:string})=>{
  let content:React.ReactNode;
  switch(id){
+ case 'corner-zoom-right':content=<CornerZoomDemo corner='top-right'/>;break;
+ case 'corner-zoom-left':content=<CornerZoomDemo corner='top-left'/>;break;
  case 'simulated-b-camera':content=<SimulatedBCamera presenter={<Video src={staticFile('reference/bcamera-front.mp4')} muted objectFit='cover' style={{width:'100%',height:'100%'}}/>} cuts={[{id:'left-angle',from:32,durationInFrames:103,src:staticFile('reference/bcamera-generated.mp4'),trimBefore:32},{id:'right-angle',from:135,durationInFrames:30,src:staticFile('reference/bcamera-generated.mp4'),trimBefore:135}]}/>;break;
  case 'pip-one-to-three':content=<BranchDemo/>;break;
  case 'opening-title':content=<TitleScene/>;break;

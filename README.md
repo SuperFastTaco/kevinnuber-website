@@ -13,7 +13,7 @@ Open http://127.0.0.1:4173, or http://127.0.0.1:4173/mglibrary for the library. 
 
 ## Update the library
 
-The `mglibrary/` folder is a deployment snapshot of the original motion library's published `site/` folder. It includes all 29 MP4 previews, posters, prompts, fonts, and source references. To refresh it after editing and publishing the original library:
+The `mglibrary/` folder is a deployment snapshot of the original motion library's published `site/` folder. It includes all 31 MP4 previews, posters, prompts, fonts, and source references. To refresh it after editing and publishing the original library:
 
 ```sh
 node scripts/sync-mglibrary.mjs /path/to/bombbomb-motion-library/site
