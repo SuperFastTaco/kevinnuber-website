@@ -345,3 +345,14 @@ Previews: 6 seconds, silent, 960×540, 30 fps. Editable sources: 1920×1080. Dem
 - Source: src/Demos.tsx → CornerZoomDemo
 - Status: Added by request; version 1.0.0
 
+## Hub & spokes (hub-and-spokes)
+
+- Category: Steps & diagrams
+- Intent: A central circular object connects to six surrounding icon tiles. Spokes draw outward one at a time, each tile pops in, and the completed hub glows before the scene fades.
+- Best for: Showing the parts of a plan, priorities around a person, services around a business, or capabilities around a central concept.
+- Guidance: Keep the center dominant and six tiles evenly spaced at 60° intervals. Draw lines from the hub to tile edges, then pop in the matching tile. Do not spin the ring. Default to icons only, without captions or brand logos. Match independent reveal cues to actual speech and hold the completed diagram long enough to read.
+- Adapt: Central icon/image/object, surrounding icons or words, 3–6 items, reveal order and cue frames, radial spacing, optional labels, brand colors, center glow, and fade-out timing.
+- Preview: site/media/hub-and-spokes.mp4
+- Source: src/Demos.tsx → HubSpokeDemo
+- Status: Added by request; version 1.0.0
+

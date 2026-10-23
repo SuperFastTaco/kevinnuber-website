@@ -777,3 +777,25 @@ Keep the original footage filling the entire canvas and one continuous video tim
 DELIVERABLE
 Provide editable source using Remotion, Hyperframes, or your available motion tool, and an MP4 preview when rendering is supported. Keep animation deterministic. Preserve the treatment’s intent while interpreting typography, imagery, and motion creatively.
 
+## Hub & spokes (hub-and-spokes)
+
+Create a 6-second 1920×1080, 30 fps hub-and-spoke motion graphic.
+
+VISUAL STRUCTURE
+Place one 260px circular hub in the center. Arrange six 150px rounded square tiles at 60° steps around it, starting directly above the hub, on a roughly 340px radius. Draw 4px spokes from the hub boundary to each tile boundary. Keep the diagram centered and balanced with generous surrounding whitespace. No headline or captions in the default version.
+
+CONTENT — ADAPT TO THE ACTUAL IDEA
+The center can contain a person, object, product, symbol, short phrase, or supplied image. The six outer tiles contain related icons, objects, or short words. For this neutral example, use a compass in the center and clock, people, travel arrow, heart, target, and home symbols around it. These represent Time, Family, Travel, Wellbeing, Purpose, and Freedom, but do not display those labels in the default demo. Do not use AI-agent wording, robot imagery, or app logos unless requested. An optional subtle blink is appropriate only if the chosen center has eyes.
+
+BRANDING
+Use approved Simplicity video colors: dark blue #004472 for the hub, blue #0076BD for spokes and outer icons, white #FFFFFF for tiles and the center symbol, and light gray #E6E7E8 for the background. Use thin vector strokes, a light hub border and restrained blue glow. If words are added, use Arial Nova with Arial fallback. Do not use the reference’s charcoal, coral, or Geist, and do not apply the library website’s warm UI colors to this video. No company logo unless approved.
+
+MOTION AND TIMING
+0–0.8s: gently fade and scale in the center. Start the six spoke reveals at approximately 0.8, 1.27, 1.73, 2.2, 2.67 and 3.13 seconds. Each line draws outward over about 0.57 seconds. As each line approaches its destination, pop its tile in over about 0.53 seconds with restrained overshoot, then hold its position. Once all six items have arrived, add a soft blue glow around the hub and hold the complete diagram. Start the full diagram fade-out at 5.4 seconds; finish by 6 seconds, leaving the background. Keep nodes stationary—no orbit or rotation.
+
+EDITABILITY
+Make center content, outer content, item count (normally 3–6), radius, start angle, reveal frames, glow, and fade-out independently editable. Re-time to the actual spoken ideas for a real edit. If the center has no eyes, omit blinking rather than imposing a robot metaphor. Spokes mean association, not sequence, quantity or causation. For longer labels, enlarge tiles or adjust spacing instead of shrinking text. Code is optional scaffolding; preserve the behavior and adapt the content.
+
+DELIVERABLE
+Provide editable Remotion, Hyperframes, or equivalent source and a silent MP4 preview when rendering is supported. Use deterministic frame-based animation. All icons should be original editable vectors or supplied assets.
+

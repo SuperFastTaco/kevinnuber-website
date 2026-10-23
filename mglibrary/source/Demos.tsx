@@ -1,3 +1,4 @@
+import {HubAndSpokes} from './components/HubAndSpokes';
 import {CornerZoomCallout} from './components/CornerZoomCallout';
 import {SimulatedBCamera} from './components/SimulatedBCamera';
 import {OneToThreeBranch} from './components/OneToThreeBranch';
@@ -69,9 +70,20 @@ export const CornerZoomDemo=({corner}:{corner:'top-left'|'top-right'})=> <Corner
  </div>
 }/>;
 
+const SpokeIcon=({kind}:{kind:number})=> <svg viewBox="0 0 24 24" width={70} height={70} fill="none" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round">{[
+ <g key="time"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3 2"/></g>,
+ <g key="family"><circle cx="9" cy="8" r="3"/><path d="M3 20v-3a6 6 0 0 1 12 0v3M16 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 5"/></g>,
+ <g key="travel"><path d="m3 10 18-7-7 18-3-8-8-3ZM11 13 21 3"/></g>,
+ <g key="health"><path d="M20 5c-3-3-6 0-8 2-2-2-5-5-8-2-5 5 3 11 8 15 5-4 13-10 8-15Z"/></g>,
+ <g key="purpose"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></g>,
+ <g key="freedom"><path d="M4 20h16M6 20V9l6-5 6 5v11M10 20v-7h4v7"/></g>,
+][kind]}</svg>;
+export const HubSpokeDemo=()=> <HubAndSpokes centerContent={<svg viewBox="0 0 100 100" width={118} height={118} fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round"><circle cx="50" cy="50" r="37"/><path d="m66 34-9 23-23 9 9-23 23-9Z"/><path d="m43 43 14 14M50 8v7M50 85v7M8 50h7M85 50h7"/></svg>} items={['Time','Family','Travel','Wellbeing','Purpose','Freedom'].map((label,i)=>({id:label.toLowerCase(),label,icon:<SpokeIcon kind={i}/>,revealFrame:24+i*14}))}/>;
+
 export const Demo=({id}:{id:string})=>{
  let content:React.ReactNode;
  switch(id){
+ case 'hub-and-spokes':content=<HubSpokeDemo/>;break;
  case 'corner-zoom-right':content=<CornerZoomDemo corner='top-right'/>;break;
  case 'corner-zoom-left':content=<CornerZoomDemo corner='top-left'/>;break;
  case 'simulated-b-camera':content=<SimulatedBCamera presenter={<Video src={staticFile('reference/bcamera-front.mp4')} muted objectFit='cover' style={{width:'100%',height:'100%'}}/>} cuts={[{id:'left-angle',from:32,durationInFrames:103,src:staticFile('reference/bcamera-generated.mp4'),trimBefore:32},{id:'right-angle',from:135,durationInFrames:30,src:staticFile('reference/bcamera-generated.mp4'),trimBefore:135}]}/>;break;
