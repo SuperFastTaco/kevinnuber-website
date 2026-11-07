@@ -801,20 +801,24 @@ Provide editable Remotion, Hyperframes, or equivalent source and a silent MP4 pr
 
 ## Zoom + bold text (zoom-bold-text)
 
-Create a 6-second 1920×1080, 30fps motion study: Zoom + bold text.
+Add a zoom-and-bold-text motion graphic to the supplied presenter video at the selected spoken phrase.
 
-INTENT
-Start with the supplied presenter footage full-frame. Smoothly zoom and reframe the presenter toward one side, opening space on the other side for very large stacked words. Put the words directly over the footage with a pronounced dark drop shadow. Keep the room visible; no text panel, split-screen, or PiP.
+INPUTS
+Use the supplied video, the phrase to emphasize, and its timestamp or transcript cue. If the phrase or location is missing, ask which words and moment to use. Match the existing video’s resolution, aspect ratio, frame rate, and audio. Keep the presenter’s original speech and continuous playback.
 
-SAMPLE COPY AND BRANDING
-Use “Make” / “it” / “matter.” on three lines, with the first and last lines much larger than the short middle line. Treat this as replaceable sample copy. Use Arial Nova Bold, or Arial Bold fallback, in sentence case. White words with the final word in approved light blue #66A4D9. Other available brand anchors are navy #004472 and blue #0076BD. Use a dark offset shadow with a soft outer shadow to separate the words from the footage. Do not copy the reference’s purple or condensed all-caps type. No logo.
+CAMERA MOVE
+Begin at the normal full-frame framing. Smoothly zoom in approximately 1.2–1.3× and reframe the speaker toward one side, creating space for text on the opposite side. Choose the side based on the footage. Preserve headroom, keep the face and eyes unobstructed, and keep the image filling every edge. Use the available source resolution to limit the zoom. Maintain one continuous video layer through the move.
 
-FRAMING AND READABILITY
-For text on the left, zoom approximately 1.3× with the enlarged video anchored at the left edge so the speaker moves right. Adjust vertical crop gently to preserve headroom. Mirror the layout when the source needs text on the right, but never mirror the actual footage. Keep all canvas edges filled. Use one continuously playing video element throughout. Reserve roughly 43% of the frame width for text with a 6.5% outer margin. Keep the face and eyes unobstructed. Add only a subtle graduated darkening behind the words if needed; no opaque card.
+TEXT TREATMENT
+Place the selected phrase directly over the footage in two or three stacked lines. Use a few words, deliberate line breaks, and contrasting line sizes so the key word or phrase is the largest element. Use Arial Nova Bold with Arial Bold as the fallback, in sentence case. Set the main words in white #FFFFFF and the emphasized word or line in light blue #66A4D9. Reserve roughly 40–43% of the frame width for the text, with at least a 6.5% outer margin. Adjust the text area and sizing to keep it clear of the speaker.
 
-ANIMATION
-0–0.6s: clean full-frame presenter. 0.6–1.53s: zoom and lateral reframe. Reveal the three lines at 1.60, 1.93, and 2.27 seconds with a short fade/upward settle, retaining the completed stack. Clear all words at 4.53–4.93s. Return to the original framing at 5.0–5.8s and finish cleanly. The silent sample need not match the presenter’s speech. In production, align each reveal to the actual edited words and extend the hold as needed.
+SHADOW AND BACKGROUND GRADIENT
+Give the text a pronounced dark drop shadow: at 1920×1080, start with an 8px downward shadow, 2px blur, and 45% black opacity, plus a softer 18px downward shadow, 28px blur, and 75% black opacity. Scale these values with the output resolution and adjust for readability.
+Add a subtle black gradient underneath the text, fading inward from the text-side edge. For left-side text, start near 42% black opacity at the left edge, reduce to roughly 32% by 30% of the frame width, and fade to transparent by 64%. Reverse the gradient for right-side text. Fade it in and out with the words. Keep the footage visible through it; the text should sit over the scene without an opaque panel.
 
-EDITABILITY AND DELIVERABLE
-Expose text, line breaks, font sizes, side, colors, shadow, subtle background darkening, crop, zoom, and independent line/clear/return cue frames. Use supplied presenter media, not a fabricated replacement. Provide editable deterministic Remotion, Hyperframes, or equivalent source and a silent MP4 preview when rendering is supported. Preserve the visual intent; exact code reuse is optional.
+TIMING
+Start the zoom shortly before the emphasized phrase and let it settle before the first text line appears. A zoom duration of roughly 0.7–1.0 seconds is a useful starting point. Reveal each line on its corresponding spoken words with a short 0.3–0.45-second fade and slight upward settle. Hold the completed phrase through the end of the spoken thought, leaving enough reading time. Fade out the text and gradient over approximately 0.3–0.4 seconds, then smoothly return to the original framing over about 0.7–0.9 seconds. Adapt the total duration to the speech rather than forcing a fixed-length scene.
+
+DELIVERABLE
+Integrate the effect into the video using editable Remotion, Hyperframes, or the project’s existing motion workflow. Keep the phrase, line breaks, font sizes, colors, shadow, gradient strength, text position, crop, zoom, and all cue times adjustable. Use deterministic animation. Provide the editable implementation and a rendered preview of the affected section with the original audio when rendering is supported.
 
