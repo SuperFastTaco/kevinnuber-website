@@ -356,3 +356,14 @@ Previews: 6 seconds, silent, 960×540, 30 fps. Editable sources: 1920×1080. Dem
 - Source: src/Demos.tsx → HubSpokeDemo
 - Status: Added by request; version 1.0.0
 
+## Zoom + bold text (zoom-bold-text)
+
+- Category: Titles & emphasis
+- Intent: The presenter starts full-frame, zooms and reframes to one side, then oversized stacked words appear over the footage with a pronounced drop shadow.
+- Best for: Emphasizing one short spoken idea while keeping the speaker visible: a key phrase, contrast, or memorable takeaway.
+- Guidance: Keep the presenter’s face clear and the footage full-bleed. Use a few words with deliberate line breaks, a strong but readable shadow and one brand accent. Reveal after the reframe; clear the words before returning. Preserve one continuous video node. Adjust crop to the source and inspect headroom and gestures.
+- Adapt: Words, line breaks, relative sizes, color emphasis, shadow offset/blur/opacity, text side/width/top, zoom and vertical crop, scrim strength, per-line reveal cues, clear and return frames.
+- Preview: site/media/zoom-bold-text.mp4
+- Source: src/Demos.tsx → ZoomBoldText
+- Status: Added by request; version 1.0.0
+

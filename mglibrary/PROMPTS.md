@@ -799,3 +799,22 @@ Make center content, outer content, item count (normally 3–6), radius, start a
 DELIVERABLE
 Provide editable Remotion, Hyperframes, or equivalent source and a silent MP4 preview when rendering is supported. Use deterministic frame-based animation. All icons should be original editable vectors or supplied assets.
 
+## Zoom + bold text (zoom-bold-text)
+
+Create a 6-second 1920×1080, 30fps motion study: Zoom + bold text.
+
+INTENT
+Start with the supplied presenter footage full-frame. Smoothly zoom and reframe the presenter toward one side, opening space on the other side for very large stacked words. Put the words directly over the footage with a pronounced dark drop shadow. Keep the room visible; no text panel, split-screen, or PiP.
+
+SAMPLE COPY AND BRANDING
+Use “Make” / “it” / “matter.” on three lines, with the first and last lines much larger than the short middle line. Treat this as replaceable sample copy. Use Arial Nova Bold, or Arial Bold fallback, in sentence case. White words with the final word in approved light blue #66A4D9. Other available brand anchors are navy #004472 and blue #0076BD. Use a dark offset shadow with a soft outer shadow to separate the words from the footage. Do not copy the reference’s purple or condensed all-caps type. No logo.
+
+FRAMING AND READABILITY
+For text on the left, zoom approximately 1.3× with the enlarged video anchored at the left edge so the speaker moves right. Adjust vertical crop gently to preserve headroom. Mirror the layout when the source needs text on the right, but never mirror the actual footage. Keep all canvas edges filled. Use one continuously playing video element throughout. Reserve roughly 43% of the frame width for text with a 6.5% outer margin. Keep the face and eyes unobstructed. Add only a subtle graduated darkening behind the words if needed; no opaque card.
+
+ANIMATION
+0–0.6s: clean full-frame presenter. 0.6–1.53s: zoom and lateral reframe. Reveal the three lines at 1.60, 1.93, and 2.27 seconds with a short fade/upward settle, retaining the completed stack. Clear all words at 4.53–4.93s. Return to the original framing at 5.0–5.8s and finish cleanly. The silent sample need not match the presenter’s speech. In production, align each reveal to the actual edited words and extend the hold as needed.
+
+EDITABILITY AND DELIVERABLE
+Expose text, line breaks, font sizes, side, colors, shadow, subtle background darkening, crop, zoom, and independent line/clear/return cue frames. Use supplied presenter media, not a fabricated replacement. Provide editable deterministic Remotion, Hyperframes, or equivalent source and a silent MP4 preview when rendering is supported. Preserve the visual intent; exact code reuse is optional.
+

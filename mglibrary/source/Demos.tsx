@@ -1,3 +1,4 @@
+import {ZoomBoldText} from './components/ZoomBoldText';
 import {HubAndSpokes} from './components/HubAndSpokes';
 import {CornerZoomCallout} from './components/CornerZoomCallout';
 import {SimulatedBCamera} from './components/SimulatedBCamera';
@@ -83,6 +84,7 @@ export const HubSpokeDemo=()=> <HubAndSpokes centerContent={<svg viewBox="0 0 10
 export const Demo=({id}:{id:string})=>{
  let content:React.ReactNode;
  switch(id){
+ case 'zoom-bold-text':content=<ZoomBoldText presenter={<Presenter/>} lines={[{text:'Make',fontSize:190,revealFrame:48},{text:'it',fontSize:115,revealFrame:58},{text:'matter.',fontSize:205,revealFrame:68,color:C.light}]}/>;break;
  case 'hub-and-spokes':content=<HubSpokeDemo/>;break;
  case 'corner-zoom-right':content=<CornerZoomDemo corner='top-right'/>;break;
  case 'corner-zoom-left':content=<CornerZoomDemo corner='top-left'/>;break;
