@@ -822,3 +822,25 @@ Start the zoom shortly before the emphasized phrase and let it settle before the
 DELIVERABLE
 Integrate the effect into the video using editable Remotion, Hyperframes, or the project’s existing motion workflow. Keep the phrase, line breaks, font sizes, colors, shadow, gradient strength, text position, crop, zoom, and all cue times adjustable. Use deterministic animation. Provide the editable implementation and a rendered preview of the affected section with the original audio when rendering is supported.
 
+## Textured statement + underline (textured-underline)
+
+Add a full-screen text emphasis scene to the supplied video at the selected important point.
+
+INPUTS AND PLACEMENT
+Use the supplied phrase and its timestamp or transcript cue. If either is missing, ask which words and moment to emphasize. Match the project’s resolution, aspect ratio and frame rate. Temporarily replace the picture with this graphic while preserving the original spoken audio and its timing, then return to the video.
+
+COMPOSITION AND TYPE
+Show one concise statement with generous whitespace. Set a short lead-in in white #FFFFFF and the important word or phrase in light blue #66A4D9. Use Arial Nova Bold with Arial Bold as fallback, sentence case, tight but readable spacing, and strong visual weight. Center the text horizontally near the middle of the frame. At 1920×1080, start around 140px text size and keep at least 8.5% outer margins. Fit the actual phrase; for longer copy, use a deliberate two-line layout or shorten the approved wording with permission. Keep the emphasis and its underline together.
+
+TEXTURED BACKGROUND AND DEPTH
+Use dark blue #004472 as the full-screen background. Layer a fine square grid approximately every 36px, drawn with white lines at about 8–10% opacity. Add subtle fixed fine grain at roughly 6% opacity and a few faint dust-like specks. Keep all textures behind the text and low-contrast. Add a broad, soft blue #0076BD glow behind the emphasized phrase, plus a weaker diffuse blue glow near the lower-right edge. The glow should blend smoothly into the navy, giving depth rather than appearing as a hard shape. A gentle edge vignette and very slow background drift are optional. Avoid distracting shimmer or flashing.
+
+UNDERLINE
+Place a thin, gently arched underline just beneath the emphasized phrase. Make it slightly thicker in the middle and tapered at both ends, using the same light blue as the emphasized text. Animate its reveal from left to right as if drawing one continuous stroke. Match its width to the words, leave enough space for descenders, and keep it clear of other lines.
+
+ANIMATION AND SPEECH TIMING
+Bring the statement in with a short fade and a subtle upward settle over about 0.5–0.7 seconds. Once the words are legible, draw the underline over roughly 0.7–1.0 seconds, timed to the key spoken phrase. Hold the completed statement long enough to read comfortably and through the end of the thought. Fade the text, underline and background detail together before transitioning back to the footage. Adapt the scene length to the speech rather than forcing a fixed duration. Keep motion restrained and deterministic, including seeded texture and any background drift.
+
+DELIVERABLE
+Integrate this as an editable Remotion, Hyperframes or equivalent scene in the video. Expose wording, line breaks, emphasis color, font size, position, texture density, glow strength, underline shape and all cue times. Provide editable source and a preview of the affected section with original audio when rendering is supported.
+

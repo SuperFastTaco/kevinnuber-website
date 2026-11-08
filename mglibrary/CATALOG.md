@@ -367,3 +367,14 @@ Previews: 6 seconds, silent, 960×540, 30 fps. Editable sources: 1920×1080. Dem
 - Source: src/Demos.tsx → ZoomBoldText
 - Status: Added by request; version 1.0.0
 
+## Textured statement + underline (textured-underline)
+
+- Category: Titles & emphasis
+- Intent: A full-screen statement sits over a fine grid and grain texture, with a soft blue glow adding depth. A tapered curved underline sweeps beneath the emphasized words.
+- Best for: Giving an important spoken point, definition, or short takeaway a dedicated full-screen moment.
+- Guidance: Use one concise phrase, generous whitespace and heavy brand typography. Establish the text before drawing the underline; allow a real reading hold. Keep the grid, grain and glow quiet. Resize or rebreak long copy rather than letting it overflow. In an edit, retain the underlying speech and time the accent to the actual words.
+- Adapt: Lead-in and emphasized phrase, font size and vertical position, brand palette, glow strength, grid/grain intensity, text entrance, underline draw and exit cues.
+- Preview: site/media/textured-underline.mp4
+- Source: src/Demos.tsx → TexturedUnderline
+- Status: Added by request; version 1.0.0
+
