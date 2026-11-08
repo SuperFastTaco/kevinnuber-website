@@ -1,3 +1,4 @@
+import {BlurredTranscript} from './components/BlurredTranscript';
 import {TexturedUnderline} from './components/TexturedUnderline';
 import {ZoomBoldText} from './components/ZoomBoldText';
 import {HubAndSpokes} from './components/HubAndSpokes';
@@ -85,6 +86,7 @@ export const HubSpokeDemo=()=> <HubAndSpokes centerContent={<svg viewBox="0 0 10
 export const Demo=({id}:{id:string})=>{
  let content:React.ReactNode;
  switch(id){
+ case 'blurred-transcript':content=<BlurredTranscript presenter={<Presenter/>} words={[{text:'Make',startMs:1000,endMs:1200},{text:'the',startMs:1400,endMs:1600},{text:'next',startMs:1800,endMs:2100},{text:'chapter',startMs:2200,endMs:2550},{text:'your',startMs:2700,endMs:3000},{text:'best.',startMs:3200,endMs:3700}]}/>;break;
  case 'textured-underline':content=<TexturedUnderline lead='Make it' emphasis='meaningful.'/>;break;
  case 'zoom-bold-text':content=<ZoomBoldText presenter={<Presenter/>} lines={[{text:'Make',fontSize:190,revealFrame:48},{text:'it',fontSize:115,revealFrame:58},{text:'matter.',fontSize:205,revealFrame:68,color:C.light}]}/>;break;
  case 'hub-and-spokes':content=<HubSpokeDemo/>;break;

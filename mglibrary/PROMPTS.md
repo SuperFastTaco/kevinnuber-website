@@ -844,3 +844,25 @@ Bring the statement in with a short fade and a subtle upward settle over about 0
 DELIVERABLE
 Integrate this as an editable Remotion, Hyperframes or equivalent scene in the video. Expose wording, line breaks, emphasis color, font size, position, texture density, glow strength, underline shape and all cue times. Provide editable source and a preview of the affected section with original audio when rendering is supported.
 
+## Blurred transcript + underline (blurred-transcript)
+
+Add a blurred-background, word-by-word transcript treatment to the supplied video for the selected spoken sentence.
+
+INPUTS AND SYNCHRONIZATION
+Use the selected sentence and its actual word-level timestamps from the edited video. If the sentence or timing is missing, identify the intended passage and obtain or align its transcript before finalizing the animation. Preserve the exact spoken wording and punctuation. Match the project’s resolution, aspect ratio and frame rate, and keep the original audio. Map timestamps into the local scene timeline once.
+
+BACKGROUND
+Keep the original presenter footage playing continuously in full frame. Smoothly soften it over about 0.4–0.5 seconds before the first word appears. At 1920×1080, begin with roughly 12px of blur and subtle black dimming around 24% opacity; adjust so the speaker and room remain recognizable. Overscan the video just enough to prevent transparent or dark blur fringes at the frame edges. Apply the blur to the footage only, leaving all text sharp. Do not freeze, restart, mirror, or replace the source clip.
+
+WORDS AND LAYOUT
+Use large bold white #FFFFFF type in Arial Nova Bold with Arial Bold as fallback. Place the sentence across the lower-middle of the frame with generous outer margins. At 1920×1080, start near 92px and around 59% from the top, with at least 9% side margins; adapt to the actual composition. Reveal each whole word as it is spoken, using at most a very short fade/settle. Retain earlier words so the complete sentence accumulates. Reserve the final layout from the start so existing words do not slide or recenter as new words appear. Keep unrevealed words fully invisible. Use a soft dark shadow for separation and optional very faint white glow. Keep to a short sentence; deliberately wrap or split longer passages into readable phrases.
+
+UNDERLINE FINISH
+Wait until the final word has finished, then draw a thin underline from left to right beneath the completed phrase. Use a slightly uneven, hand-drawn stroke in white #FFFFFF, with approved light blue #66A4D9 available as an optional accent when it remains readable. Keep it below letter descenders and match its span to the text block. Start around 0.2 seconds after the final word ends and draw over about 0.8 seconds. Leave enough reading time after the underline finishes. For a multiline phrase, place the stroke below the completed block with clear spacing.
+
+EXIT
+Fade the sentence and underline together over roughly 0.4 seconds, then smoothly remove the blur and dimming to restore the clean presenter image. Let the shot and audio continue naturally. Adapt total duration to the speech and reading time rather than using a fixed-length animation.
+
+DELIVERABLE
+Build an editable Remotion, Hyperframes, or equivalent scene in the video. Expose words and timestamps, font size and position, blur radius, dimming, colors, underline timing, text clearing, and focus return. Use deterministic frame-based animation and confirm the first visible frame of every word matches its rounded timestamp. Provide editable source and a preview of the affected section with original audio when rendering is supported.
+

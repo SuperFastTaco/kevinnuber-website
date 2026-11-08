@@ -378,3 +378,14 @@ Previews: 6 seconds, silent, 960×540, 30 fps. Editable sources: 1920×1080. Dem
 - Source: src/Demos.tsx → TexturedUnderline
 - Status: Added by request; version 1.0.0
 
+## Blurred transcript + underline (blurred-transcript)
+
+- Category: Captions
+- Intent: The moving picture softens behind a large sentence that builds word by word. Once the phrase has been spoken, a hand-drawn-style underline sweeps beneath it, then the clear picture returns.
+- Best for: Giving one spoken sentence extra emphasis without leaving the presenter footage.
+- Guidance: Use actual edited word timestamps in production. Keep one continuous video node and the original audio. Blur only the footage; keep the words sharp. Reserve the full phrase layout so earlier words do not jump. Draw the underline after the final word ends, hold for reading, clear the text, then restore focus. The silent library demo uses illustrative timings, not a verified transcription.
+- Adapt: Phrase and start/end timestamps, font size, text position, blur/dimming strength, text and underline colors, word reveal duration, underline delay/draw duration, clear and focus-return cues.
+- Preview: site/media/blurred-transcript.mp4
+- Source: src/Demos.tsx → BlurredTranscript
+- Status: Added by request; version 1.0.0
+
